@@ -556,7 +556,14 @@ body {
       display: inline-block;
       height: 1em;
       width: 1em;
-      background-image: url(/assets/img/bullet.svg); }
+      -webkit-mask: url(/assets/img/bullet.svg);
+              mask: url(/assets/img/bullet.svg); }
+    .skills__item--working-knowledge::before {
+      background-color: #06C847; }
+    .skills__item--know-something-about::before {
+      background-color: #653CAD; }
+    .skills__item--want-to-learn::before {
+      background-color: #2251CC; }
   .skills__list {
     width: 100%;
     display: -ms-grid;
@@ -572,5 +579,8 @@ body {
   margin-bottom: 3rem; }
   .social__link {
     margin-right: 1.5rem; }
+
+.svg_skill-bullet {
+  fill: hotpink; }
 
 /*# sourceMappingURL=main.css.map */
