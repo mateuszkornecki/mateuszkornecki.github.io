@@ -415,17 +415,30 @@ body {
   font-size: 2.25rem;
   line-height: 3rem; }
 
+.section__horizontal-line {
+  margin-bottom: 8rem; }
+
 .section__subheading {
   max-width: 379px;
   width: 100%;
   font-weight: 600;
   font-size: 2rem;
-  line-height: 2.75rem; }
+  line-height: 2.75rem;
+  position: relative; }
   .section__subheading::before {
-    content: "_";
-    width: 80px;
-    height: 4px;
-    color: hotpink; }
+    top: -2rem;
+    position: absolute;
+    content: "";
+    display: block;
+    border-radius: 1rem;
+    width: 5rem;
+    height: 0.25rem; }
+  .section__subheading--working-knowledge::before {
+    background-color: #06C847; }
+  .section__subheading--know-something-about::before {
+    background-color: #653CAD; }
+  .section__subheading--want-to-learn::before {
+    background-color: #2251CC; }
 
 .skills {
   padding: 7rem; }
