@@ -46,6 +46,7 @@ body {
         color: $dark-violet;
     }
     &__description {
+        color: $grey;
         max-width: 42.5rem;
         width: 100%;
         font-weight: 300;
@@ -63,7 +64,7 @@ body {
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 2.25rem;
-    color: #0593FB;
+    color: $light-blue;
     &--mail {
         text-decoration: none;
         border-bottom: 2px solid;
@@ -99,6 +100,12 @@ body {
     &__content {
         margin: 3rem;
     }
+    &__description {
+        font-weight: 300;
+        font-size: 1.125rem;
+        line-height: 2rem;
+        color: $grey;
+    }
     &__footer {
         display: flex;
         justify-content: flex-end;
@@ -106,18 +113,68 @@ body {
         background: #F5F7FA;
         border-radius: 0 0 0.5rem 0.5rem;
     }
+    &__link {
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 2rem;
+        text-decoration: none;
+        color: $light-blue;
+        &--demo {
+            padding-right: 25px;
+            display: flex;
+            align-items: center;
+            &::before {
+                content: '';
+                width: 24px;
+                height: 24px;
+                display: inline-block;
+                background-image: url(/assets/img/demo-icon.svg)
+            }
+        }
+        &--github {
+            padding-left: 25px;
+            display: flex;
+            align-items: center;
+            &::before {
+                content: '';
+                width: 24px;
+                height: 24px;
+                display: inline-block;
+                background-image: url(/assets/img/code-icon.svg)
+            }
+        }
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
 }
 
 .section {
+    &__description {
+        color: $grey;
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        max-width: 36.25rem;
+        width: 100%;
+        margin-bottom: 3.625rem;
+    }
     &__heading {
         font-weight: 600;
         font-size: 2.25rem;
         line-height: 3rem;
+        color: $dark-violet;
     }
     &__horizontal-line {
         margin-bottom: 8rem;
+        height: 2px;
+        border: none;
+        background-color: $light-grey
     }
     &__subheading {
+        color: $dark-violet;
         max-width: 379px;
         width: 100%;
         font-weight: 600;
@@ -164,6 +221,7 @@ body {
         }
     }
     &__item {
+        color: $grey;
         &::before {
             margin-right: 1rem;
             content: "";
