@@ -373,6 +373,8 @@ body {
     text-decoration: none;
     border-bottom: 2px solid;
     padding-bottom: 0.25rem; }
+  .link--footer-mail {
+    padding-bottom: 0; }
 
 .projects {
   background: #F5F7FA;
@@ -422,6 +424,7 @@ body {
     text-decoration: none;
     color: #0593FB; }
     .repo__link--demo {
+      position: relative;
       padding-right: 25px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -434,7 +437,17 @@ body {
         width: 24px;
         height: 24px;
         display: inline-block;
-        background-image: url(/assets/img/demo-icon.svg); }
+        background-image: url(/assets/img/demo-icon.svg);
+        margin-right: 0.625rem; }
+      .repo__link--demo::after {
+        position: absolute;
+        left: 100%;
+        content: '';
+        display: inline-block;
+        width: 2px;
+        height: 2rem;
+        background-color: #CBD2D9;
+        pointer-events: none; }
     .repo__link--github {
       padding-left: 25px;
       display: -webkit-box;
@@ -448,7 +461,8 @@ body {
         width: 24px;
         height: 24px;
         display: inline-block;
-        background-image: url(/assets/img/code-icon.svg); }
+        background-image: url(/assets/img/code-icon.svg);
+        margin-right: 0.625rem; }
   .repo__title {
     font-weight: 600;
     font-size: 1.25rem;
@@ -462,12 +476,32 @@ body {
   max-width: 36.25rem;
   width: 100%;
   margin-bottom: 3.625rem; }
+  .section__description--footer {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    color: white; }
 
 .section__heading {
   font-weight: 600;
   font-size: 2.25rem;
   line-height: 3rem;
-  color: #171F3F; }
+  color: #171F3F;
+  position: relative; }
+  .section__heading--footer {
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.75rem; }
+    .section__heading--footer::before {
+      top: -2rem;
+      position: absolute;
+      content: "";
+      display: block;
+      border-radius: 1rem;
+      width: 5rem;
+      height: 0.25rem;
+      background-color: #0593FB; }
 
 .section__horizontal-line {
   margin-bottom: 8rem;
@@ -532,5 +566,10 @@ body {
     @media (max-width: 600px) {
       .skills__list {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); } }
+
+.social {
+  margin-bottom: 3rem; }
+  .social__link {
+    margin-right: 1.5rem; }
 
 /*# sourceMappingURL=main.css.map */
