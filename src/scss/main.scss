@@ -268,7 +268,22 @@ body {
             display: inline-block;
             height: 1em;
             width: 1em;
-            background-image: url(/assets/img/bullet.svg);
+            mask: url(/assets/img/bullet.svg);
+        }
+        &--working-knowledge {
+            &::before {
+                background-color: $green;
+            }
+        }
+        &--know-something-about {
+            &::before {
+                background-color: $purple;
+            }
+        }
+        &--want-to-learn {
+            &::before {
+                background-color: $blue;
+            }
         }
     }
     &__list {
@@ -288,4 +303,8 @@ body {
     &__link {
         margin-right: 1.5rem;
     }
+}
+
+.svg_skill-bullet {
+    fill: hotpink;
 }
