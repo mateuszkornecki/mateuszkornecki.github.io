@@ -61,8 +61,8 @@ body {
 
 .link {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
     color: #0593FB;
     &--mail {
         text-decoration: none;
@@ -109,9 +109,23 @@ body {
 }
 
 .section {
+    &__heading {
+        font-weight: 600;
+        font-size: 2.25rem;
+        line-height: 3rem;
+    }
     &__subheading {
         max-width: 379px;
         width: 100%;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2.75rem;
+        &::before {
+            content: "_";
+            width: 80px;
+            height: 4px;
+            color: hotpink;
+        }
     }
 }
 
@@ -127,11 +141,21 @@ body {
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         }
     }
+    &__item {
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 1em;
+            width: 1em;
+            background-image: url(/assets/img/bullet.svg);
+        }
+    }
     &__list {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         grid-gap: 1rem;
+        list-style: none;
         @media(max-width: 600px) {
             grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         }
