@@ -11,6 +11,55 @@ html {
 }
 
 body {
-    background: black;
-    color: red;
+    border: 16px solid #171F3F;
+}
+
+.footer {
+    padding: 7rem;
+    background: #171F3F;
+    color: white;
+}
+
+.header {
+    padding: 7rem;
+    max-width: 46rem;
+}
+
+.projects {
+    background: #F5F7FA;
+    width: 100%;
+    padding: 7rem;
+}
+
+.repositories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.repo {
+    max-width: 36.25rem;
+    max-height: 18.75rem;
+    border-radius: 0.5rem;
+    background: white;
+    box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+    &__content {
+        padding: 3rem;
+    }
+    &__footer {
+        padding: 1rem 3rem;
+        background: #F5F7FA;
+    }
+}
+
+.skills {
+    padding: 7rem;
+    &__subsection {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
