@@ -466,7 +466,8 @@ body {
   .repo__title {
     font-weight: 600;
     font-size: 1.25rem;
-    line-height: 2.25rem; }
+    line-height: 2.25rem;
+    color: #171F3F; }
 
 .section__description {
   color: #52606D;
