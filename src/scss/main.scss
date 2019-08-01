@@ -114,17 +114,39 @@ body {
         font-size: 2.25rem;
         line-height: 3rem;
     }
+    &__horizontal-line {
+        margin-bottom: 8rem;
+    }
     &__subheading {
         max-width: 379px;
         width: 100%;
         font-weight: 600;
         font-size: 2rem;
         line-height: 2.75rem;
+        position: relative;
         &::before {
-            content: "_";
-            width: 80px;
-            height: 4px;
-            color: hotpink;
+            top: -2rem;
+            position: absolute;
+            content: "";
+            display: block;
+            border-radius: 1rem;
+            width: 5rem;
+            height: 0.25rem;
+        }
+        &--working-knowledge {
+            &::before {
+                background-color: $green;
+            }
+        }
+        &--know-something-about {
+            &::before {
+                background-color: $purple;
+            }
+        }
+        &--want-to-learn {
+            &::before {
+                background-color: $blue;
+            }
         }
     }
 }
