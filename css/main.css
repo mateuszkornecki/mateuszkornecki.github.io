@@ -469,6 +469,11 @@ body {
     line-height: 2.25rem;
     color: #171F3F; }
 
+.profile-image {
+  padding: 4px;
+  border-radius: 50%;
+  border: 4px solid #CBD2D9; }
+
 .section__description {
   color: #52606D;
   font-weight: 300;
@@ -579,8 +584,5 @@ body {
   margin-bottom: 3rem; }
   .social__link {
     margin-right: 1.5rem; }
-
-.svg_skill-bullet {
-  fill: hotpink; }
 
 /*# sourceMappingURL=main.css.map */
