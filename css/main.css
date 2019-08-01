@@ -365,8 +365,8 @@ body {
 
 .link {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
   color: #0593FB; }
   .link--mail {
     text-decoration: none;
@@ -410,9 +410,22 @@ body {
     background: #F5F7FA;
     border-radius: 0 0 0.5rem 0.5rem; }
 
+.section__heading {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 3rem; }
+
 .section__subheading {
   max-width: 379px;
-  width: 100%; }
+  width: 100%;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.75rem; }
+  .section__subheading::before {
+    content: "_";
+    width: 80px;
+    height: 4px;
+    color: hotpink; }
 
 .skills {
   padding: 7rem; }
@@ -429,12 +442,20 @@ body {
     @media (max-width: 600px) {
       .skills__subsection {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
+  .skills__item::before {
+    margin-right: 1rem;
+    content: "";
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-image: url(/assets/img/bullet.svg); }
   .skills__list {
     width: 100%;
     display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 1rem; }
+    grid-gap: 1rem;
+    list-style: none; }
     @media (max-width: 600px) {
       .skills__list {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); } }
