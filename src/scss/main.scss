@@ -2,6 +2,7 @@
 @import "_variables";
 html {
     box-sizing: border-box;
+    background: #171F3F;
 }
 
 *,
@@ -11,7 +12,15 @@ html {
 }
 
 body {
-    border: 16px solid #171F3F;
+    // border: 16px solid #171F3F;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 1rem;
+    max-width: 90rem;
+    background: white;
 }
 
 .footer {
@@ -52,6 +61,13 @@ body {
     }
 }
 
+.section {
+    &__subheading {
+        max-width: 23.6875rem;
+        width: 100%;
+    }
+}
+
 .skills {
     padding: 7rem;
     &__subsection {
@@ -61,5 +77,6 @@ body {
     &__list {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
     }
 }
