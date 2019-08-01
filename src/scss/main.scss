@@ -1,8 +1,9 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,500,600&display=swap&subset=latin-ext');
 html {
     box-sizing: border-box;
-    background: #171F3F;
+    background: $dark-violet;
 }
 
 *,
@@ -12,9 +13,9 @@ html {
 }
 
 body {
-    // border: 16px solid #171F3F;
     display: flex;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -26,39 +27,81 @@ body {
 
 .footer {
     padding: 7rem;
-    background: #171F3F;
+    background: $dark-violet;
     color: white;
+    @media(max-width: 600px) {
+        margin: 1rem;
+    }
 }
 
 .header {
     padding: 7rem;
-    max-width: 46rem;
+    @media(max-width: 600px) {
+        padding: 1rem;
+    }
+    &__heading {
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 3.5rem;
+        color: $dark-violet;
+    }
+    &__description {
+        max-width: 42.5rem;
+        width: 100%;
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+}
+
+.hero {
+    max-width: 780px;
+    width: 100%;
+}
+
+.link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    color: #0593FB;
+    &--mail {
+        text-decoration: none;
+        border-bottom: 2px solid;
+        padding-bottom: 0.25rem;
+    }
 }
 
 .projects {
     background: #F5F7FA;
     width: 100%;
     padding: 7rem;
+    @media(max-width: 600px) {
+        padding: 1rem;
+    }
 }
 
 .repositories {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(580px, 1fr));
+    // grid-template-columns: 1fr 1fr;
     grid-gap: 1.5rem;
+    @media(max-width: 600px) {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
 }
 
 .repo {
-    // max-width: 580px;
-    // max-height: 300px;
     width: 100%;
     height: 100%;
     border-radius: 0.5rem;
     background: white;
     box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
     &__content {
-        padding: 3rem;
+        margin: 3rem;
     }
     &__footer {
+        display: flex;
+        justify-content: flex-end;
         padding: 1rem 3rem;
         background: #F5F7FA;
         border-radius: 0 0 0.5rem 0.5rem;
@@ -67,20 +110,30 @@ body {
 
 .section {
     &__subheading {
+        max-width: 379px;
         width: 100%;
     }
 }
 
 .skills {
     padding: 7rem;
+    @media(max-width: 600px) {
+        margin: 1rem;
+    }
     &__subsection {
         display: flex;
         justify-content: space-between;
+        @media(max-width: 600px) {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
     }
     &__list {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         grid-gap: 1rem;
+        @media(max-width: 600px) {
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        }
     }
 }

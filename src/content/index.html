@@ -29,20 +29,21 @@
 <body>
     <div class="container">
         <header class="header">
-            <img class="profile-image" src="assets/img/avatar.png" alt="mateusz kornecki profile's photo">
-            <h1 class="header__heading">
-                Hey there! 👋 My name is Maciej and I’m an aspiring Frontend developer and a keen Star Wars fan.
-            </h1>
-            <p class="header__description">
-                You might be interested in checking the list of <a class="header__link" href="#">my skills.</a> Don’t forget to have a glimpse at <a class="header__link" href="#">my projects.</a> Currently I’m looking for a new challenges so if you have
-                one -
-                <a class="header__link" href="#"> contact me </a>😊
-            </p>
-            <a class="mail" href="mailto:mateusz.kornecki@gmail.com">mateusz.kornecki@gmail.com</a>
+            <div class="hero">
+                <img class="profile-image" src="assets/img/avatar.png" alt="mateusz kornecki profile's photo">
+                <h1 class="header__heading">
+                    Hey there! 👋 My name is Maciej and I’m an aspiring Frontend developer and a keen Star Wars fan.
+                </h1>
+                <p class="header__description">
+                    You might be interested in checking the list of <a class="link" href="#skills">my skills.</a> Don’t forget to have a glimpse at <a class="link" href="#projects">my projects.</a> Currently I’m looking for a new challenges so if you
+                    have one - <a class="link" href="#contact"> contact me </a>😊
+                </p>
+                <a class="link link--mail" href="mailto:mateusz.kornecki@gmail.com">mateusz.kornecki@gmail.com</a>
+            </div>
         </header>
 
         <main class="main">
-            <section class="skills">
+            <section class="skills" id="skills">
                 <h2 class="section__heading">
                     My skills
                 </h2>
@@ -91,7 +92,7 @@
                     </ul>
                 </section>
             </section>
-            <section class="projects">
+            <section class="projects" id="projects">
                 <h2 class="section__heading">
                     Recent projects
                 </h2>
@@ -147,7 +148,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <h2 class="section__heading">
                 Contact me
             </h2>
@@ -166,7 +167,7 @@
                     <img src="assets/img/instagram-logo.svg" alt="instagram logo" class="social__image">
                 </a>
             </div>
-            <a class="mail" href="mailto:mateusz.kornecki@gmail.com">mateusz.kornecki@gmail.com</a>
+            <a class="link link--mail" href="mailto:mateusz.kornecki@gmail.com">mateusz.kornecki@gmail.com</a>
         </footer>
     </div>
     <script src="js/main.js"></script>
