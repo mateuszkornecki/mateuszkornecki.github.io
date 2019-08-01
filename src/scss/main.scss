@@ -120,6 +120,7 @@ body {
         text-decoration: none;
         color: $light-blue;
         &--demo {
+            position: relative;
             padding-right: 25px;
             display: flex;
             align-items: center;
@@ -128,7 +129,18 @@ body {
                 width: 24px;
                 height: 24px;
                 display: inline-block;
-                background-image: url(/assets/img/demo-icon.svg)
+                background-image: url(/assets/img/demo-icon.svg);
+                margin-right: 0.625rem;
+            }
+            &::after {
+                position: absolute;
+                left: 100%;
+                content: '';
+                display: inline-block;
+                width: 2px;
+                height: 2rem;
+                background-color: $light-grey;
+                pointer-events: none;
             }
         }
         &--github {
@@ -140,7 +152,8 @@ body {
                 width: 24px;
                 height: 24px;
                 display: inline-block;
-                background-image: url(/assets/img/code-icon.svg)
+                background-image: url(/assets/img/code-icon.svg);
+                margin-right: 0.625rem;
             }
         }
     }
