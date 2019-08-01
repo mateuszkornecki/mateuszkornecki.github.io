@@ -70,6 +70,9 @@ body {
         border-bottom: 2px solid;
         padding-bottom: 0.25rem;
     }
+    &--footer-mail {
+        padding-bottom: 0;
+    }
 }
 
 .projects {
@@ -173,12 +176,35 @@ body {
         max-width: 36.25rem;
         width: 100%;
         margin-bottom: 3.625rem;
+        &--footer {
+            font-weight: 300;
+            font-size: 1.25rem;
+            line-height: 2.25rem;
+            color: white;
+        }
     }
     &__heading {
         font-weight: 600;
         font-size: 2.25rem;
         line-height: 3rem;
         color: $dark-violet;
+        position: relative;
+        &--footer {
+            color: white;
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 2.75rem;
+            &::before {
+                top: -2rem;
+                position: absolute;
+                content: "";
+                display: block;
+                border-radius: 1rem;
+                width: 5rem;
+                height: 0.25rem;
+                background-color: $light-blue;
+            }
+        }
     }
     &__horizontal-line {
         margin-bottom: 8rem;
@@ -253,5 +279,12 @@ body {
         @media(max-width: 600px) {
             grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         }
+    }
+}
+
+.social {
+    margin-bottom: 3rem;
+    &__link {
+        margin-right: 1.5rem;
     }
 }
