@@ -333,6 +333,10 @@ body {
   max-width: 90rem;
   width: 100%;
   background: white; }
+  @media (max-width: 600px) {
+    .container {
+      max-width: 100vw;
+      margin: 0; } }
 
 .footer {
   padding: 7rem;
@@ -340,7 +344,9 @@ body {
   color: white; }
   @media (max-width: 600px) {
     .footer {
-      margin: 1rem; } }
+      margin: 0rem;
+      padding: 1rem;
+      padding-top: 6rem; } }
 
 .header {
   padding: 7rem; }
@@ -370,10 +376,14 @@ body {
   line-height: 2.25rem;
   color: #0593FB; }
   .link--mail {
+    font-size: 1rem;
     text-decoration: none;
     border-bottom: 2px solid;
-    padding-bottom: 0.25rem; }
+    padding-bottom: 0.25rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word; }
   .link--footer-mail {
+    font-size: 1rem;
     padding-bottom: 0; }
 
 .projects {
@@ -387,11 +397,12 @@ body {
 .repositories {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(580px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
   grid-gap: 1.5rem; }
   @media (max-width: 600px) {
     .repositories {
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }
 
 .repo {
   width: 100%;
@@ -400,12 +411,18 @@ body {
   background: white;
   -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
           box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09); }
+  @media (max-width: 350px) {
+    .repo {
+      font-size: 0.625rem; } }
   .repo__content {
     margin: 3rem; }
+    @media (max-width: 310px) {
+      .repo__content {
+        margin: 1rem; } }
   .repo__description {
     font-weight: 300;
-    font-size: 1.125rem;
-    line-height: 2rem;
+    font-size: 1.125em;
+    line-height: 2em;
     color: #52606D; }
   .repo__footer {
     display: -webkit-box;
@@ -417,15 +434,18 @@ body {
     padding: 1rem 3rem;
     background: #F5F7FA;
     border-radius: 0 0 0.5rem 0.5rem; }
+    @media (max-width: 310px) {
+      .repo__footer {
+        padding: 1rem; } }
   .repo__link {
     font-weight: 500;
-    font-size: 1.125rem;
-    line-height: 2rem;
+    font-size: 1.125em;
+    line-height: 2em;
     text-decoration: none;
     color: #0593FB; }
     .repo__link--demo {
       position: relative;
-      padding-right: 25px;
+      padding-right: 1.5rem;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -434,8 +454,8 @@ body {
               align-items: center; }
       .repo__link--demo::before {
         content: '';
-        width: 24px;
-        height: 24px;
+        width: 1.5rem;
+        height: 1.5rem;
         display: inline-block;
         background-image: url(/assets/img/demo-icon.svg);
         margin-right: 0.625rem; }
@@ -449,7 +469,7 @@ body {
         background-color: #CBD2D9;
         pointer-events: none; }
     .repo__link--github {
-      padding-left: 25px;
+      padding-left: 1.5rem;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -458,8 +478,8 @@ body {
               align-items: center; }
       .repo__link--github::before {
         content: '';
-        width: 24px;
-        height: 24px;
+        width: 1.5rem;
+        height: 1.5rem;
         display: inline-block;
         background-image: url(/assets/img/code-icon.svg);
         margin-right: 0.625rem; }
@@ -508,6 +528,9 @@ body {
       width: 5rem;
       height: 0.25rem;
       background-color: #0593FB; }
+      @media (max-width: 1200px) {
+        .section__heading--footer::before {
+          top: -1rem; } }
 
 .section__horizontal-line {
   margin-bottom: 8rem;
@@ -517,12 +540,16 @@ body {
 
 .section__subheading {
   color: #171F3F;
-  max-width: 379px;
-  width: 100%;
+  min-width: 379px;
   font-weight: 600;
   font-size: 2rem;
   line-height: 2.75rem;
   position: relative; }
+  @media (max-width: 1200px) {
+    .section__subheading {
+      min-width: 0;
+      max-width: 379px;
+      width: 100%; } }
   .section__subheading::before {
     top: -2rem;
     position: absolute;
@@ -531,6 +558,9 @@ body {
     border-radius: 1rem;
     width: 5rem;
     height: 0.25rem; }
+    @media (max-width: 1200px) {
+      .section__subheading::before {
+        top: -1rem; } }
   .section__subheading--working-knowledge::before {
     background-color: #06C847; }
   .section__subheading--know-something-about::before {
@@ -542,6 +572,7 @@ body {
   padding: 7rem; }
   @media (max-width: 600px) {
     .skills {
+      padding: 1rem;
       margin: 1rem; } }
   .skills__subsection {
     display: -webkit-box;
@@ -550,10 +581,19 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    @media (max-width: 600px) {
+    @media (max-width: 1200px) {
       .skills__subsection {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; } }
   .skills__item {
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 2.5rem;
     color: #52606D; }
     .skills__item::before {
       margin-right: 1rem;
@@ -562,7 +602,11 @@ body {
       height: 1em;
       width: 1em;
       -webkit-mask: url(/assets/img/bullet.svg);
-              mask: url(/assets/img/bullet.svg); }
+              mask: url(/assets/img/bullet.svg);
+      -webkit-mask-size: contain;
+              mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+              mask-repeat: no-repeat; }
     .skills__item--working-knowledge::before {
       background-color: #06C847; }
     .skills__item--know-something-about::before {
@@ -570,15 +614,18 @@ body {
     .skills__item--want-to-learn::before {
       background-color: #2251CC; }
   .skills__list {
-    width: 100%;
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    -ms-grid-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+    grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
     grid-gap: 1rem;
     list-style: none; }
-    @media (max-width: 600px) {
+    @media (max-width: 1200px) {
       .skills__list {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); } }
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
+        padding-left: 0; } }
 
 .social {
   margin-bottom: 3rem; }
