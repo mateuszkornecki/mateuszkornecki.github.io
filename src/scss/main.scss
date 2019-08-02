@@ -392,7 +392,19 @@ body {
 
 .social {
     margin-bottom: 3rem;
-    &__link {
+    &__image {
         margin-right: 1.5rem;
+        &:hover {
+            transition: transform 0.03s linear;
+            transform: scale(1.075);
+        }
+        &:active {
+            transition: transform 0.03s linear;
+            transform: scale(1.025);
+        }
+        &__link {
+            display: inline-block;
+            margin-right: 1.5rem;
+        }
     }
 }
