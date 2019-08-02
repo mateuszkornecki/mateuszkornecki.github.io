@@ -400,6 +400,28 @@ body {
     padding-bottom: 0.25rem;
     overflow-wrap: break-word;
     word-wrap: break-word; }
+    .link--maillink, .link--mailvisited {
+      text-decoration: none; }
+    .link--mail:hover {
+      text-decoration: none;
+      -webkit-transition: -webkit-transform 0.03s linear;
+      transition: -webkit-transform 0.03s linear;
+      -o-transition: transform 0.03s linear;
+      transition: transform 0.03s linear;
+      transition: transform 0.03s linear, -webkit-transform 0.03s linear;
+      -webkit-transform: scale(1.075);
+          -ms-transform: scale(1.075);
+              transform: scale(1.075); }
+    .link--mail:active {
+      text-decoration: none;
+      -webkit-transition: -webkit-transform 0.03s linear;
+      transition: -webkit-transform 0.03s linear;
+      -o-transition: transform 0.03s linear;
+      transition: transform 0.03s linear;
+      transition: transform 0.03s linear, -webkit-transform 0.03s linear;
+      -webkit-transform: scale(1.025);
+          -ms-transform: scale(1.025);
+              transform: scale(1.025); }
 
 .projects {
   background: #F5F7FA;
@@ -490,9 +512,9 @@ body {
       -o-transition: transform 0.03s linear;
       transition: transform 0.03s linear;
       transition: transform 0.03s linear, -webkit-transform 0.03s linear;
-      -webkit-transform: scale(1);
-          -ms-transform: scale(1);
-              transform: scale(1);
+      -webkit-transform: scale(1.025);
+          -ms-transform: scale(1.025);
+              transform: scale(1.025);
       text-decoration: none; }
     .repo__link--demo {
       position: relative;
