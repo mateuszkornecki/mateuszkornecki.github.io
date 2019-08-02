@@ -4,6 +4,7 @@
 html {
     box-sizing: border-box;
     background: $dark-violet;
+    border: none;
 }
 
 *,
@@ -19,21 +20,23 @@ body {
 }
 
 .container {
-    margin: 1rem;
+    margin-top: 1rem;
     max-width: 90rem;
     width: 100%;
-    background: white;
-    @media(max-width: 600px) {
-        max-width: 100vw;
-        margin: 0;
+    background: $white;
+    border: none;
+    @media(max-width: $mobile) {
+        margin-top: 0;
+        width: 100vw;
     }
 }
 
 .footer {
+    border: none;
     padding: 7rem;
     background: $dark-violet;
-    color: white;
-    @media(max-width: 600px) {
+    color: $white;
+    @media(max-width: $mobile) {
         margin: 0rem;
         padding: 1rem;
         padding-top: 6rem;
@@ -42,8 +45,9 @@ body {
 
 .header {
     padding: 7rem;
-    @media(max-width: 600px) {
+    @media(max-width: $mobile) {
         padding: 1rem;
+        margin: 1rem;
     }
     &__heading {
         font-size: 2.5rem;
@@ -109,7 +113,7 @@ body {
     background: #F5F7FA;
     width: 100%;
     padding: 7rem;
-    @media(max-width: 600px) {
+    @media(max-width: $mobile) {
         padding: 1rem;
     }
 }
@@ -118,7 +122,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
     grid-gap: 1.5rem;
-    @media(max-width: 600px) {
+    @media(max-width: $mobile) {
         grid-template-columns: 1fr;
     }
 }
@@ -128,7 +132,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 0.5rem;
-    background: white;
+    background: $white;
     box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
     @media(max-width: 350px) {
         font-size: 0.625rem;
@@ -240,7 +244,7 @@ body {
             font-weight: 300;
             font-size: 1.25rem;
             line-height: 2.25rem;
-            color: white;
+            color: $white;
         }
     }
     &__heading {
@@ -250,7 +254,7 @@ body {
         color: $dark-violet;
         position: relative;
         &--footer {
-            color: white;
+            color: $white;
             font-weight: 600;
             font-size: 2rem;
             line-height: 2.75rem;
@@ -263,7 +267,7 @@ body {
                 width: 5rem;
                 height: 0.25rem;
                 background-color: $light-blue;
-                @media(max-width: 1200px) {
+                @media(max-width: $one-column) {
                     top: -1rem;
                 }
             }
@@ -273,7 +277,10 @@ body {
         margin-bottom: 8rem;
         height: 2px;
         border: none;
-        background-color: $light-grey
+        background-color: $light-grey;
+        @media(max-width: $mobile) {
+            margin-bottom: 3.875rem;
+        }
     }
     &__subheading {
         color: $dark-violet;
@@ -282,7 +289,7 @@ body {
         font-size: 2rem;
         line-height: 2.75rem;
         position: relative;
-        @media(max-width: 1200px) {
+        @media(max-width: $one-column) {
             min-width: 0;
             max-width: 379px;
             width: 100%;
@@ -295,7 +302,7 @@ body {
             border-radius: 1rem;
             width: 5rem;
             height: 0.25rem;
-            @media(max-width: 1200px) {
+            @media(max-width: $one-column) {
                 top: -1rem;
             }
         }
@@ -319,14 +326,14 @@ body {
 
 .skills {
     padding: 7rem;
-    @media(max-width: 600px) {
+    @media(max-width: $mobile) {
         padding: 1rem;
         margin: 1rem;
     }
     &__subsection {
         display: flex;
         justify-content: space-between;
-        @media(max-width: 1200px) {
+        @media(max-width: $one-column) {
             flex-direction: column;
             justify-content: flex-start;
         }
@@ -367,7 +374,7 @@ body {
         grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
         grid-gap: 1rem;
         list-style: none;
-        @media(max-width: 1200px) {
+        @media(max-width: $one-column) {
             grid-template-columns: 1fr;
             grid-gap: 0.5rem;
             padding-left: 0;
