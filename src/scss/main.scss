@@ -67,21 +67,41 @@ body {
 }
 
 .link {
+    display: inline-block;
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 2.25rem;
     color: $light-blue;
+    &:link,
+    &:visited {
+        text-decoration: none;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        transition: transform 0.03s linear;
+        transform: scale(0.975);
+        text-decoration: none;
+    }
     &--mail {
         font-size: 1rem;
-        text-decoration: none;
         border-bottom: 2px solid;
         padding-bottom: 0.25rem;
         overflow-wrap: break-word;
         word-wrap: break-word;
-    }
-    &--footer-mail {
-        font-size: 1rem;
-        padding-bottom: 0;
+        // &link,
+        // &visited {
+        //     text-decoration: none;
+        // }
+        // &:hover {
+        //     text-decoration: none;
+        // }
+        // &:active {
+        //     transition: transform 0.05s linear;
+        //     transform: scale(1.075);
+        //     text-decoration: none;
+        // }
     }
 }
 
@@ -135,11 +155,26 @@ body {
         }
     }
     &__link {
+        display: inline-block;
         font-weight: 500;
         font-size: 1.125em;
         line-height: 2em;
-        text-decoration: none;
         color: $light-blue;
+        &:link,
+        &:visited {
+            text-decoration: none;
+        }
+        &:hover {
+            text-decoration: underline;
+            transition: transform 0.03s linear;
+            transform: scale(1.075);
+            text-decoration: none;
+        }
+        &:active {
+            transition: transform 0.03s linear;
+            transform: scale(1);
+            text-decoration: none;
+        }
         &--demo {
             position: relative;
             padding-right: 1.5rem;
