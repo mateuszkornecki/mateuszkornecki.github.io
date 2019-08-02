@@ -2,7 +2,7 @@
 
 const showRepos = () => {
 
-    fetch(`https://api.github.com/users/mateuszkornecki/repos?sort=full_name&direction=asc`)
+    fetch(`https://api.github.com/users/mateuszkornecki/repos?sort=updated`)
         .then(resp => resp.json())
         .then(resp => {
             let repos = resp;

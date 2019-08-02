@@ -94,18 +94,20 @@ body {
         padding-bottom: 0.25rem;
         overflow-wrap: break-word;
         word-wrap: break-word;
-        // &link,
-        // &visited {
-        //     text-decoration: none;
-        // }
-        // &:hover {
-        //     text-decoration: none;
-        // }
-        // &:active {
-        //     transition: transform 0.05s linear;
-        //     transform: scale(1.075);
-        //     text-decoration: none;
-        // }
+        &link,
+        &visited {
+            text-decoration: none;
+        }
+        &:hover {
+            text-decoration: none;
+            transition: transform 0.03s linear;
+            transform: scale(1.075);
+        }
+        &:active {
+            text-decoration: none;
+            transition: transform 0.03s linear;
+            transform: scale(1.025);
+        }
     }
 }
 
@@ -182,7 +184,7 @@ body {
         }
         &:active {
             transition: transform 0.03s linear;
-            transform: scale(1);
+            transform: scale(1.025);
             text-decoration: none;
         }
         &--demo {
