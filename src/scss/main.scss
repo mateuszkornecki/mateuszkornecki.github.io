@@ -203,15 +203,15 @@ body {
                 margin-right: 0.625rem;
             }
         }
-        &__separator {
-            font-weight: 500;
-            font-size: 1.125em;
-            line-height: 2em;
-            display: inline-block;
-            width: 2px;
-            height: 2em;
-            background-color: $light-grey;
-        }
+    }
+    &__separator {
+        font-weight: 500;
+        font-size: 1.125em;
+        line-height: 2em;
+        display: inline-block;
+        width: 2px;
+        height: 2em;
+        background-color: $light-grey;
     }
     &__title {
         font-weight: 600;
