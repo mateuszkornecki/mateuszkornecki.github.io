@@ -371,20 +371,31 @@ body {
   width: 100%; }
 
 .link {
+  display: inline-block;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 2.25rem;
   color: #0593FB; }
+  .link:link, .link:visited {
+    text-decoration: none; }
+  .link:hover {
+    text-decoration: underline; }
+  .link:active {
+    -webkit-transition: -webkit-transform 0.03s linear;
+    transition: -webkit-transform 0.03s linear;
+    -o-transition: transform 0.03s linear;
+    transition: transform 0.03s linear;
+    transition: transform 0.03s linear, -webkit-transform 0.03s linear;
+    -webkit-transform: scale(0.975);
+        -ms-transform: scale(0.975);
+            transform: scale(0.975);
+    text-decoration: none; }
   .link--mail {
     font-size: 1rem;
-    text-decoration: none;
     border-bottom: 2px solid;
     padding-bottom: 0.25rem;
     overflow-wrap: break-word;
     word-wrap: break-word; }
-  .link--footer-mail {
-    font-size: 1rem;
-    padding-bottom: 0; }
 
 .projects {
   background: #F5F7FA;
@@ -438,11 +449,34 @@ body {
       .repo__footer {
         padding: 1rem; } }
   .repo__link {
+    display: inline-block;
     font-weight: 500;
     font-size: 1.125em;
     line-height: 2em;
-    text-decoration: none;
     color: #0593FB; }
+    .repo__link:link, .repo__link:visited {
+      text-decoration: none; }
+    .repo__link:hover {
+      text-decoration: underline;
+      -webkit-transition: -webkit-transform 0.03s linear;
+      transition: -webkit-transform 0.03s linear;
+      -o-transition: transform 0.03s linear;
+      transition: transform 0.03s linear;
+      transition: transform 0.03s linear, -webkit-transform 0.03s linear;
+      -webkit-transform: scale(1.075);
+          -ms-transform: scale(1.075);
+              transform: scale(1.075);
+      text-decoration: none; }
+    .repo__link:active {
+      -webkit-transition: -webkit-transform 0.03s linear;
+      transition: -webkit-transform 0.03s linear;
+      -o-transition: transform 0.03s linear;
+      transition: transform 0.03s linear;
+      transition: transform 0.03s linear, -webkit-transform 0.03s linear;
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1);
+      text-decoration: none; }
     .repo__link--demo {
       position: relative;
       padding-right: 1.5rem;
