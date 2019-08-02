@@ -705,7 +705,28 @@ body {
 
 .social {
   margin-bottom: 3rem; }
-  .social__link {
+  .social__image {
     margin-right: 1.5rem; }
+    .social__image:hover {
+      -webkit-transition: -webkit-transform 0.03s linear;
+      transition: -webkit-transform 0.03s linear;
+      -o-transition: transform 0.03s linear;
+      transition: transform 0.03s linear;
+      transition: transform 0.03s linear, -webkit-transform 0.03s linear;
+      -webkit-transform: scale(1.075);
+          -ms-transform: scale(1.075);
+              transform: scale(1.075); }
+    .social__image:active {
+      -webkit-transition: -webkit-transform 0.03s linear;
+      transition: -webkit-transform 0.03s linear;
+      -o-transition: transform 0.03s linear;
+      transition: transform 0.03s linear;
+      transition: transform 0.03s linear, -webkit-transform 0.03s linear;
+      -webkit-transform: scale(1.025);
+          -ms-transform: scale(1.025);
+              transform: scale(1.025); }
+    .social__image__link {
+      display: inline-block;
+      margin-right: 1.5rem; }
 
 /*# sourceMappingURL=main.css.map */
