@@ -626,6 +626,8 @@ body {
       min-width: 0;
       max-width: 379px;
       width: 100%; } }
+  .section__subheading ~ * {
+    margin-top: 3rem; }
   .section__subheading::before {
     top: -2rem;
     position: absolute;
@@ -641,8 +643,16 @@ body {
     background-color: #06C847; }
   .section__subheading--know-something-about::before {
     background-color: #653CAD; }
-  .section__subheading--want-to-learn::before {
-    background-color: #2251CC; }
+  @media (max-width: 1200px) {
+    .section__subheading--know-something-about {
+      margin-top: 3rem; } }
+  .section__subheading--want-to-learn {
+    margin-top: 3rem; }
+    .section__subheading--want-to-learn::before {
+      background-color: #2251CC; }
+    @media (max-width: 1200px) {
+      .section__subheading--want-to-learn {
+        margin-top: 3rem; } }
 
 .skills {
   padding: 7rem; }
