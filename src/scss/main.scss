@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,500,600&display=swap&subset=latin-ext');
 html {
     box-sizing: border-box;
-    background: $dark-violet;
+    // background: $dark-violet;
     border: none;
     scroll-behavior: smooth
 }
@@ -15,26 +15,19 @@ html {
 }
 
 body {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     font-family: 'Poppins', sans-serif;
-}
-
-.container {
-    margin-top: 1rem;
-    max-width: 90rem;
-    width: 100%;
-    background: $white;
-    border: none;
-    @media(max-width: $mobile) {
-        margin-top: 0;
-        width: 100vw;
+    border: solid 1rem $dark-violet;
+    @media (max-width: $mobile) {
+        border: none;
     }
 }
 
 .footer {
+    width: 100%;
     border: none;
-    padding: 7rem;
+    // padding: 7rem;
     background: $dark-violet;
     color: $white;
     @media(max-width: $mobile) {
@@ -42,10 +35,18 @@ body {
         padding: 1rem;
         padding-top: 6rem;
     }
+    &__container {
+        max-width: $desktop;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 .header {
-    padding: 7rem;
+    margin: 0 auto;
+    max-width: $desktop;
+    width: 100%;
+    // padding: 7rem;
     @media(max-width: $mobile) {
         padding: 1rem;
         margin: 1rem;
@@ -113,11 +114,16 @@ body {
 }
 
 .projects {
-    background: #F5F7FA;
     width: 100%;
-    padding: 7rem;
+    background: #F5F7FA;
+    // padding: 7rem;
     @media(max-width: $mobile) {
         padding: 1rem;
+    }
+    &__container {
+        margin: 0 auto;
+        max-width: $desktop;
+        width: 100%;
     }
 }
 
@@ -344,7 +350,10 @@ body {
 }
 
 .skills {
-    padding: 7rem;
+    margin: 0 auto;
+    // padding: 7rem;
+    max-width: $desktop;
+    width: 100%;
     @media(max-width: $mobile) {
         padding: 1rem;
         margin: 1rem;
