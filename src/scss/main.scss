@@ -302,6 +302,9 @@ body {
             max-width: 379px;
             width: 100%;
         }
+        &~* {
+            margin-top: 3rem;
+        }
         &::before {
             top: -2rem;
             position: absolute;
@@ -323,10 +326,17 @@ body {
             &::before {
                 background-color: $purple;
             }
+            @media(max-width: $one-column) {
+                margin-top: 3rem;
+            }
         }
         &--want-to-learn {
+            margin-top: 3rem;
             &::before {
                 background-color: $blue;
+            }
+            @media(max-width: $one-column) {
+                margin-top: 3rem;
             }
         }
     }
