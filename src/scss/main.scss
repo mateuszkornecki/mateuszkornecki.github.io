@@ -40,7 +40,6 @@ body {
     @media(max-width: $mobile) {
         margin: 0;
         padding: 120px 1rem 120px;
-        padding-top: 6rem;
     }
 }
 
@@ -271,6 +270,10 @@ body {
             line-height: 2.25rem;
             color: $white;
         }
+        @media (max-width: $mobile) {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
     }
     &__heading {
         font-weight: 600;
@@ -298,6 +301,9 @@ body {
                 @media(max-width: $desktop) {
                     top: -1rem;
                 }
+                @media(max-width: $mobile) {
+                    width: 2.5rem;
+                }
             }
         }
     }
@@ -314,17 +320,12 @@ body {
         color: $dark-violet;
         min-width: 379px;
         font-weight: 600;
-        font-size: 2rem;
-        line-height: 2.75rem;
+        font-size: 1.375rem;
+        line-height: 2rem;
         position: relative;
-        @media(max-width: $desktop) {
-            min-width: 0;
-            max-width: 379px;
-            width: 100%;
-        }
-        &~* {
-            margin-top: 3rem;
-        }
+        // &~* {
+        //     margin-top: 3rem;
+        // }
         &::before {
             top: -2rem;
             position: absolute;
@@ -336,6 +337,9 @@ body {
             @media(max-width: $desktop) {
                 top: -1rem;
             }
+            @media(max-width: $mobile) {
+                width: 2.5rem;
+            }
         }
         &--working-knowledge {
             &::before {
@@ -346,18 +350,26 @@ body {
             &::before {
                 background-color: $purple;
             }
-            @media(max-width: $desktop) {
-                margin-top: 3rem;
-            }
+            // @media(max-width: $desktop) {
+            //     margin-top: 3rem;
+            // }
         }
         &--want-to-learn {
             margin-top: 3rem;
             &::before {
                 background-color: $blue;
             }
-            @media(max-width: $desktop) {
-                margin-top: 3rem;
-            }
+            // @media(max-width: $desktop) {
+            //     margin-top: 3rem;
+            // }
+        }
+        @media(max-width: $desktop) {
+            min-width: 0;
+            max-width: 379px;
+            width: 100%;
+        }
+        @media(max-width: $mobile) {
+            margin-bottom: 0;
         }
     }
 }
@@ -369,6 +381,10 @@ body {
     &__subsection {
         display: flex;
         justify-content: space-between;
+        &--know-something-about,
+        &--want-to-learn {
+            padding-top: 48px;
+        }
         @media(max-width: $desktop) {
             flex-direction: column;
             justify-content: flex-start;
@@ -420,7 +436,7 @@ body {
         padding: 0 3rem 176px;
     }
     @media(max-width: $mobile) {
-        padding: 1rem;
+        padding: 1rem 1rem 80px;
     }
 }
 
