@@ -74,7 +74,7 @@ body {
         padding: 0 3rem 200px;
     }
     @media(max-width: $mobile) {
-        padding: 1rem 1rem 120px;
+        padding: 0 1rem;
     }
 }
 
@@ -82,6 +82,9 @@ body {
     padding-top: 7rem;
     max-width: 780px;
     width: 100%;
+    @media(max-width: $mobile) {
+        padding-top: 4rem;
+    }
 }
 
 .link {
@@ -282,6 +285,12 @@ body {
     padding: 4px;
     border-radius: 50%;
     border: 4px solid $light-grey;
+    height: 100px;
+    width: 100px;
+    @media(max-width: $mobile) {
+        height: 66px;
+        width: 66px;
+    }
 }
 
 .section {
@@ -484,7 +493,7 @@ body {
         padding: 0 3rem 176px;
     }
     @media(max-width: $mobile) {
-        padding: 0 1rem 80px;
+        padding: 120px 1rem 80px;
     }
 }
 
