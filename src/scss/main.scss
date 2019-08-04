@@ -39,7 +39,7 @@ body {
     }
     @media(max-width: $mobile) {
         margin: 0;
-        padding: 1rem;
+        padding: 120px 1rem 120px;
         padding-top: 6rem;
     }
 }
@@ -63,12 +63,11 @@ body {
         font-size: 1.25rem;
         line-height: 2.25rem;
     }
-    @media(max-width: $mobile) {
-        padding: 1rem;
-        margin: 0;
-    }
     @media(max-width: 1400px) {
         padding: 0 3rem 200px;
+    }
+    @media(max-width: $mobile) {
+        padding: 1rem;
     }
 }
 
@@ -132,7 +131,7 @@ body {
         padding: 120px 3rem 136px;
     }
     @media(max-width: $mobile) {
-        padding: 1rem;
+        padding: 80px 1rem 80px;
     }
 }
 
@@ -278,8 +277,11 @@ body {
         font-size: 2.25rem;
         line-height: 3rem;
         color: $dark-violet;
+        margin: 0;
+        text-align: center;
         position: relative;
         &--footer {
+            text-align: left;
             color: $white;
             font-weight: 600;
             font-size: 2rem;
