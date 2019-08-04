@@ -19,7 +19,8 @@ body {
     // justify-content: center;
     font-family: 'Poppins', sans-serif;
     border: solid 1rem $dark-violet;
-    @media (max-width: $mobile) {
+    // padding: 0 7rem 0;
+    @media (max-width: $mobile), (max-width: $desktop) {
         border: none;
     }
 }
@@ -27,18 +28,21 @@ body {
 .footer {
     width: 100%;
     border: none;
-    // padding: 7rem;
+    padding: 120px 0 125px;
     background: $dark-violet;
     color: $white;
-    @media(max-width: $mobile) {
-        margin: 0rem;
-        padding: 1rem;
-        padding-top: 6rem;
-    }
     &__container {
         max-width: $desktop;
         width: 100%;
         margin: 0 auto;
+    }
+    @media(max-width: 1400px) {
+        padding: 120px 3rem 125px;
+    }
+    @media(max-width: $mobile) {
+        margin: 0rem;
+        padding: 1rem;
+        padding-top: 6rem;
     }
 }
 
@@ -46,11 +50,7 @@ body {
     margin: 0 auto;
     max-width: $desktop;
     width: 100%;
-    // padding: 7rem;
-    @media(max-width: $mobile) {
-        padding: 1rem;
-        margin: 1rem;
-    }
+    padding: 0 0 200px;
     &__heading {
         font-size: 2.5rem;
         font-weight: 600;
@@ -65,9 +65,17 @@ body {
         font-size: 1.25rem;
         line-height: 2.25rem;
     }
+    @media(max-width: $mobile) {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    @media(max-width: 1400px) {
+        padding: 0 3rem 200px;
+    }
 }
 
 .hero {
+    padding-top: 7rem;
     max-width: 780px;
     width: 100%;
 }
@@ -116,14 +124,17 @@ body {
 .projects {
     width: 100%;
     background: #F5F7FA;
-    // padding: 7rem;
-    @media(max-width: $mobile) {
-        padding: 1rem;
-    }
+    padding: 120px 0 136px;
     &__container {
         margin: 0 auto;
         max-width: $desktop;
         width: 100%;
+    }
+    @media(max-width: 1400px) {
+        padding: 120px 3rem 136px;
+    }
+    @media(max-width: $mobile) {
+        padding: 1rem;
     }
 }
 
@@ -163,7 +174,7 @@ body {
         color: $grey;
     }
     &__footer {
-        bottom: 0;
+        // bottom: 0;
         display: flex;
         justify-content: flex-end;
         padding: 1rem 3rem;
@@ -282,7 +293,7 @@ body {
                 width: 5rem;
                 height: 0.25rem;
                 background-color: $light-blue;
-                @media(max-width: $one-column) {
+                @media(max-width: $desktop) {
                     top: -1rem;
                 }
             }
@@ -304,7 +315,7 @@ body {
         font-size: 2rem;
         line-height: 2.75rem;
         position: relative;
-        @media(max-width: $one-column) {
+        @media(max-width: $desktop) {
             min-width: 0;
             max-width: 379px;
             width: 100%;
@@ -320,7 +331,7 @@ body {
             border-radius: 1rem;
             width: 5rem;
             height: 0.25rem;
-            @media(max-width: $one-column) {
+            @media(max-width: $desktop) {
                 top: -1rem;
             }
         }
@@ -333,7 +344,7 @@ body {
             &::before {
                 background-color: $purple;
             }
-            @media(max-width: $one-column) {
+            @media(max-width: $desktop) {
                 margin-top: 3rem;
             }
         }
@@ -342,7 +353,7 @@ body {
             &::before {
                 background-color: $blue;
             }
-            @media(max-width: $one-column) {
+            @media(max-width: $desktop) {
                 margin-top: 3rem;
             }
         }
@@ -351,17 +362,12 @@ body {
 
 .skills {
     margin: 0 auto;
-    // padding: 7rem;
     max-width: $desktop;
     width: 100%;
-    @media(max-width: $mobile) {
-        padding: 1rem;
-        margin: 1rem;
-    }
     &__subsection {
         display: flex;
         justify-content: space-between;
-        @media(max-width: $one-column) {
+        @media(max-width: $desktop) {
             flex-direction: column;
             justify-content: flex-start;
         }
@@ -402,11 +408,18 @@ body {
         grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
         grid-gap: 1rem;
         list-style: none;
-        @media(max-width: $one-column) {
+        @media(max-width: $desktop) {
             grid-template-columns: 1fr;
             grid-gap: 0.5rem;
             padding-left: 0;
         }
+    }
+    @media(max-width: 1400px) {
+        padding: 0 3rem 176px;
+    }
+    @media(max-width: $mobile) {
+        padding: 1rem;
+        margin: 1rem;
     }
 }
 
