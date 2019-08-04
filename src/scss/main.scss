@@ -53,6 +53,10 @@ body {
         font-weight: 600;
         line-height: 3.5rem;
         color: $dark-violet;
+        @media(max-width: $mobile) {
+            font-size: 26px;
+            line-height: 36px;
+        }
     }
     &__description {
         color: $grey;
@@ -61,12 +65,16 @@ body {
         font-weight: 300;
         font-size: 1.25rem;
         line-height: 2.25rem;
+        @media(max-width: $mobile) {
+            font-size: 14px;
+            line-height: 26px;
+        }
     }
     @media(max-width: 1400px) {
         padding: 0 3rem 200px;
     }
     @media(max-width: $mobile) {
-        padding: 1rem;
+        padding: 1rem 1rem 120px;
     }
 }
 
@@ -115,6 +123,10 @@ body {
             transform: scale(1.025);
         }
     }
+    @media(max-width: $mobile) {
+        font-size: 14px;
+        line-height: 26px;
+    }
 }
 
 .projects {
@@ -153,16 +165,13 @@ body {
     border-radius: 0.5rem;
     background: $white;
     box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
-    @media(max-width: 350px) {
-        font-size: 0.625rem;
-    }
+    // @media(max-width: 350px) {
+    //     font-size: 0.625rem;
+    // }
     &__content {
         margin: 3rem;
-        @media(max-width: 400px) {
+        @media(max-width: $mobile) {
             margin: 2rem;
-        }
-        @media(max-width: 365px) {
-            margin: 1rem;
         }
     }
     &__description {
@@ -171,6 +180,10 @@ body {
         font-size: 1.125em;
         line-height: 2em;
         color: $grey;
+        @media(max-width: $mobile) {
+            font-size: 14px;
+            line-height: 26px;
+        }
     }
     &__footer {
         display: flex;
@@ -178,8 +191,8 @@ body {
         padding: 1rem 3rem;
         background: #F5F7FA;
         border-radius: 0 0 0.5rem 0.5rem;
-        @media(max-width: 310px) {
-            padding: 1rem;
+        @media(max-width: $mobile) {
+            padding: 1rem 2rem;
         }
     }
     &__link {
@@ -230,6 +243,10 @@ body {
                 margin-right: 0.625rem;
             }
         }
+        @media(max-width: $mobile) {
+            font-size: 14px;
+            line-height: 28px;
+        }
     }
     &__separator {
         font-weight: 500;
@@ -246,6 +263,10 @@ body {
         line-height: 2.25em;
         color: $dark-violet;
         margin: 0;
+        @media(max-width: $mobile) {
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
 }
 
@@ -273,6 +294,12 @@ body {
         @media (max-width: $mobile) {
             text-align: center;
             margin-bottom: 2rem;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 26px;
+            &--footer {
+                text-align: left;
+            }
         }
     }
     &__heading {
@@ -281,7 +308,6 @@ body {
         line-height: 3rem;
         color: $dark-violet;
         margin: 0;
-        text-align: center;
         position: relative;
         &--footer {
             text-align: left;
@@ -306,6 +332,14 @@ body {
                 }
             }
         }
+        @media(max-width: $mobile) {
+            text-align: center;
+            font-size: 24px;
+            line-height: 32px;
+            &--footer {
+                text-align: left;
+            }
+        }
     }
     &__horizontal-line {
         margin-bottom: 8rem;
@@ -313,15 +347,15 @@ body {
         border: none;
         background-color: $light-grey;
         @media(max-width: $mobile) {
-            margin-bottom: 3.875rem;
+            margin-bottom: 4.25rem;
         }
     }
     &__subheading {
         color: $dark-violet;
         min-width: 379px;
         font-weight: 600;
-        font-size: 1.375rem;
-        line-height: 2rem;
+        font-size: 32px;
+        line-height: 44px;
         position: relative;
         // &~* {
         //     margin-top: 3rem;
@@ -370,6 +404,8 @@ body {
         }
         @media(max-width: $mobile) {
             margin-bottom: 0;
+            font-size: 22px;
+            line-height: 32px;
         }
     }
 }
@@ -420,6 +456,10 @@ body {
                 background-color: $blue;
             }
         }
+        @media (max-width: $mobile) {
+            font-size: 14px;
+            line-height: 36px;
+        }
     }
     &__list {
         display: grid;
@@ -436,7 +476,7 @@ body {
         padding: 0 3rem 176px;
     }
     @media(max-width: $mobile) {
-        padding: 1rem 1rem 80px;
+        padding: 0 1rem 80px;
     }
 }
 
