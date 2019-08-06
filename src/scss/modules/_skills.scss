@@ -29,21 +29,22 @@
         font-style: normal;
         font-weight: normal;
         font-size: 1.125rem;
-        line-height: 2.5rem;
+        line-height: 18px;
+        // line-height: 2.5rem;
         // font-weight: normal;
         // font-size: 18px;
         // line-height: 40px;
         color: $grey;
-        //! need to center them in different way
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
+        padding-left: 34px;
+        position: relative;
         &::before {
-            margin-right: 1rem;
+            position: absolute;
+            top: 0;
+            left: 0;
             content: "";
-            display: inline-block;
-            height: 1rem;
-            width: 1rem;
+            display: block;
+            height: 18px;
+            width: 18px;
             mask: url(/assets/img/bullet.svg);
             mask-size: contain;
             mask-repeat: no-repeat;
@@ -61,9 +62,11 @@
         }
     }
     &__list {
+        margin: 0;
+        padding: 0;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
-        grid-gap: 1rem;
+        grid-gap: 22px;
         list-style: none;
         @media(max-width: $desktop) {
             grid-template-columns: 1fr;
@@ -78,13 +81,14 @@
         padding: 120px 1rem 80px;
     }
     &__section {
+        margin-top: 128px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         // justify-content: space-between;
-        &--know-something-about,
-        &--want-to-learn {
-            padding-top: 48px;
-        }
+        // &--know-something-about,
+        // &--want-to-learn {
+        //     padding-top: 48px;
+        // }
         @media(max-width: $desktop) {
             grid-template-columns: repeat(1, 1fr);
             // flex-direction: column;
@@ -120,7 +124,7 @@
             }
         }
         &--blue {
-            margin-top: 3rem;
+            // margin-top: 3rem;
             &::before {
                 background-color: $blue;
             }
