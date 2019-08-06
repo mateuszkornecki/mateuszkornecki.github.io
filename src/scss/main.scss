@@ -1,6 +1,10 @@
 @import "_normalize";
 @import "_variables";
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,500,600&display=swap&subset=latin-ext');
+@import "modules/hero.scss";
+@import "modules/skills.scss";
+@import "modules/projects.scss";
+@import "modules/contact.scss";
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;

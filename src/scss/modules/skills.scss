@@ -1,0 +1,70 @@
+.skills {
+    margin: 0 auto;
+    max-width: $desktop;
+    width: 100%;
+    padding: 200px 0 136px;
+    &__subsection {
+        display: flex;
+        justify-content: space-between;
+        &--know-something-about,
+        &--want-to-learn {
+            padding-top: 48px;
+        }
+        @media(max-width: $desktop) {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+    &__item {
+        font-weight: normal;
+        font-size: 1.125rem;
+        line-height: 2.5rem;
+        color: $grey;
+        &::before {
+            margin-right: 1rem;
+            content: "";
+            display: inline-block;
+            height: 1em;
+            width: 1em;
+            mask: url(/assets/img/bullet.svg);
+            mask-size: contain;
+            mask-repeat: no-repeat;
+        }
+        &--working-knowledge {
+            &::before {
+                background-color: $green;
+            }
+        }
+        &--know-something-about {
+            &::before {
+                background-color: $purple;
+            }
+        }
+        &--want-to-learn {
+            &::before {
+                background-color: $blue;
+            }
+        }
+        @media (max-width: $mobile) {
+            font-size: 14px;
+            line-height: 36px;
+        }
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+        grid-gap: 1rem;
+        list-style: none;
+        @media(max-width: $desktop) {
+            grid-template-columns: 1fr;
+            grid-gap: 0.5rem;
+            padding-left: 0;
+        }
+    }
+    @media(max-width: 1400px) {
+        padding: 200px 3rem 176px;
+    }
+    @media(max-width: $mobile) {
+        padding: 120px 1rem 80px;
+    }
+}

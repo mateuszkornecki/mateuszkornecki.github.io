@@ -1,0 +1,37 @@
+.footer {
+    width: 100%;
+    padding: 120px 0 125px;
+    background: $dark-violet;
+    color: $white;
+    &__container {
+        max-width: $desktop;
+        width: 100%;
+        margin: 0 auto;
+    }
+    @media(max-width: 1400px) {
+        padding: 120px 3rem 125px;
+    }
+    @media(max-width: $mobile) {
+        margin: 0;
+        padding: 120px 1rem 120px;
+    }
+}
+
+.social {
+    margin-bottom: 3rem;
+    &__image {
+        margin-right: 1.5rem;
+        &:hover {
+            transition: transform 0.03s linear;
+            transform: scale(1.075);
+        }
+        &:active {
+            transition: transform 0.03s linear;
+            transform: scale(1.025);
+        }
+        &__link {
+            display: inline-block;
+            margin-right: 1.5rem;
+        }
+    }
+}
