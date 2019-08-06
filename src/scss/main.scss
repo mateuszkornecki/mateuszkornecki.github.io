@@ -21,6 +21,7 @@
         width: 100vw;
         width: 100%;
         font-family: 'Poppins', sans-serif;
+        -webkit-font-smoothing: antialiased;
         border: solid 1rem $dark-violet;
         @media (max-width: $desktop) {
             border: none;
