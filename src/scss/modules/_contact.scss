@@ -35,3 +35,54 @@
         }
     }
 }
+
+// .section {
+//     &__description {
+//         color: $grey;
+//         font-weight: 300;
+//         font-size: 1.25rem;
+//         line-height: 2.25rem;
+//         max-width: 36.25rem;
+//         width: 100%;
+//         margin-bottom: 3.625rem;
+//         
+//         @media (max-width: $mobile) {
+//             text-align: center;
+//             margin-bottom: 2rem;
+//             font-weight: 300;
+//             font-size: 14px;
+//             line-height: 26px;
+//         }
+//     }
+//     &__heading {
+//         font-weight: 600;
+//         font-size: 2.25rem;
+//         line-height: 3rem;
+//         color: $dark-violet;
+//         margin: 0;
+//         position: relative;
+//         
+//         }
+//         @media(max-width: $mobile) {
+//             text-align: center;
+//             font-size: 24px;
+//             line-height: 32px;
+//             &--footer {
+//                 text-align: left;
+//             }
+//         }
+//     }
+// 
+//     
+//         @media(max-width: $desktop) {
+//             min-width: 0;
+//             max-width: 379px;
+//             width: 100%;
+//         }
+//         @media(max-width: $mobile) {
+//             margin-bottom: 0;
+//             font-size: 22px;
+//             line-height: 32px;
+//         }
+//     }
+// }
