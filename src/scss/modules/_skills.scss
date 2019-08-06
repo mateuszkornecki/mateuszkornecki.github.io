@@ -26,20 +26,24 @@
         }
     }
     &__item {
+        font-style: normal;
         font-weight: normal;
         font-size: 1.125rem;
         line-height: 2.5rem;
+        // font-weight: normal;
+        // font-size: 18px;
+        // line-height: 40px;
         color: $grey;
+        //! need to center them in different way
         display: flex;
         align-items: center;
-        // flex-wrap: wrap;
+        flex-wrap: wrap;
         &::before {
-            flex-shrink: 0;
             margin-right: 1rem;
             content: "";
             display: inline-block;
-            height: 1em;
-            width: 1em;
+            height: 1rem;
+            width: 1rem;
             mask: url(/assets/img/bullet.svg);
             mask-size: contain;
             mask-repeat: no-repeat;
@@ -58,7 +62,7 @@
     }
     &__list {
         display: grid;
-        grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
         grid-gap: 1rem;
         list-style: none;
         @media(max-width: $desktop) {
