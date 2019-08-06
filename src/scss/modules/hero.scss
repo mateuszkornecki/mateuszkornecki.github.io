@@ -1,14 +1,22 @@
-.hero {
+.header {
     margin: 0 auto;
     max-width: $desktop;
     width: 100%;
-    &__container {
-        padding-top: 7rem;
-        max-width: 780px;
-        width: 100%;
-        @media(max-width: $mobile) {
-            padding-top: 4rem;
-        }
+    @media(max-width: 1400px) {
+        padding: 0 3rem;
+    }
+    @media(max-width: $mobile) {
+        padding: 0 1rem 1rem;
+        // height: 100vh;
+    }
+}
+
+.hero {
+    padding-top: 7rem;
+    max-width: 780px;
+    width: 100%;
+    @media(max-width: $mobile) {
+        padding-top: 4rem;
     }
     &__description {
         color: $grey;
@@ -23,13 +31,6 @@
             line-height: 26px;
             padding-bottom: 40px;
         }
-    }
-    @media(max-width: 1400px) {
-        padding: 0 3rem;
-    }
-    @media(max-width: $mobile) {
-        padding: 0 1rem 1rem;
-        // height: 100vh;
     }
     &__heading {
         font-size: 2.5rem;

@@ -1,198 +1,198 @@
-@import "_normalize";
-@import "_variables";
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,500,600&display=swap&subset=latin-ext');
-@import "modules/hero.scss";
-@import "modules/skills.scss";
-@import "modules/projects.scss";
-@import "modules/contact.scss";
-html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    max-width: 100vw;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-body {
-    width: 100vw;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    border: solid 1rem $dark-violet;
-    @media (max-width: $desktop) {
-        border: none;
+    @import "_normalize";
+    @import "_variables";
+    @import url('https://fonts.googleapis.com/css?family=Poppins:300,500,600&display=swap&subset=latin-ext');
+    @import "modules/hero.scss";
+    @import "modules/skills.scss";
+    @import "modules/projects.scss";
+    @import "modules/contact.scss";
+    html {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        max-width: 100vw;
     }
-}
-
-.link {
-    display: inline-block;
-    font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 2.25rem;
-    color: $light-blue;
-    &:link,
-    &:visited {
-        text-decoration: none;
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
     }
-    &:hover {
-        text-decoration: underline;
+    
+    body {
+        width: 100vw;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        border: solid 1rem $dark-violet;
+        @media (max-width: $desktop) {
+            border: none;
+        }
     }
-    &:active {
-        transition: transform 0.03s linear;
-        transform: scale(0.975);
-        text-decoration: none;
-    }
-    &--mail {
-        font-size: 1rem;
-        border-bottom: 2px solid;
-        padding-bottom: 0.25rem;
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-        &link,
-        &visited {
+    
+    .link {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        color: $light-blue;
+        &:link,
+        &:visited {
             text-decoration: none;
         }
         &:hover {
-            text-decoration: none;
-            transition: transform 0.03s linear;
-            transform: scale(1.075);
+            text-decoration: underline;
         }
         &:active {
-            text-decoration: none;
             transition: transform 0.03s linear;
-            transform: scale(1.025);
+            transform: scale(0.975);
+            text-decoration: none;
         }
-    }
-    @media(max-width: $mobile) {
-        font-size: 14px;
-        line-height: 26px;
-    }
-}
-
-.section {
-    &__description {
-        color: $grey;
-        font-weight: 300;
-        font-size: 1.25rem;
-        line-height: 2.25rem;
-        max-width: 36.25rem;
-        width: 100%;
-        margin-bottom: 3.625rem;
-        &--footer {
-            font-weight: 300;
-            font-size: 1.25rem;
-            line-height: 2.25rem;
-            color: $white;
+        &--mail {
+            font-size: 1rem;
+            border-bottom: 2px solid;
+            padding-bottom: 0.25rem;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            &link,
+            &visited {
+                text-decoration: none;
+            }
+            &:hover {
+                text-decoration: none;
+                transition: transform 0.03s linear;
+                transform: scale(1.075);
+            }
+            &:active {
+                text-decoration: none;
+                transition: transform 0.03s linear;
+                transform: scale(1.025);
+            }
         }
-        @media (max-width: $mobile) {
-            text-align: center;
-            margin-bottom: 2rem;
-            font-weight: 300;
+        @media(max-width: $mobile) {
             font-size: 14px;
             line-height: 26px;
-            &--footer {
-                text-align: left;
-            }
         }
     }
-    &__heading {
-        font-weight: 600;
-        font-size: 2.25rem;
-        line-height: 3rem;
-        color: $dark-violet;
-        margin: 0;
-        position: relative;
-        &--footer {
-            text-align: left;
-            color: $white;
-            font-weight: 600;
-            font-size: 2rem;
-            line-height: 2.75rem;
-            &::before {
-                top: -2rem;
-                position: absolute;
-                content: "";
-                display: block;
-                border-radius: 1rem;
-                width: 5rem;
-                height: 0.25rem;
-                background-color: $light-blue;
-                @media(max-width: $desktop) {
-                    top: -1rem;
-                }
-                @media(max-width: $mobile) {
-                    width: 2.5rem;
-                }
-            }
-        }
-        @media(max-width: $mobile) {
-            text-align: center;
-            font-size: 24px;
-            line-height: 32px;
-            &--footer {
-                text-align: left;
-            }
-        }
-    }
-    &__horizontal-line {
-        margin-bottom: 8rem;
-        height: 2px;
-        border: none;
-        background-color: $light-grey;
-        @media(max-width: $mobile) {
-            margin-bottom: 4.25rem;
-        }
-    }
-    &__subheading {
-        color: $dark-violet;
-        min-width: 379px;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 44px;
-        position: relative;
-        &::before {
-            top: -2rem;
-            position: absolute;
-            content: "";
-            display: block;
-            border-radius: 1rem;
-            width: 5rem;
-            height: 0.25rem;
-            @media(max-width: $desktop) {
-                top: -1rem;
-            }
-            @media(max-width: $mobile) {
-                width: 2.5rem;
-            }
-        }
-        &--working-knowledge {
-            &::before {
-                background-color: $green;
-            }
-        }
-        &--know-something-about {
-            &::before {
-                background-color: $purple;
-            }
-        }
-        &--want-to-learn {
-            margin-top: 3rem;
-            &::before {
-                background-color: $blue;
-            }
-        }
-        @media(max-width: $desktop) {
-            min-width: 0;
-            max-width: 379px;
-            width: 100%;
-        }
-        @media(max-width: $mobile) {
-            margin-bottom: 0;
-            font-size: 22px;
-            line-height: 32px;
-        }
-    }
-}
+    
+    // .section {
+    //     &__description {
+    //         color: $grey;
+    //         font-weight: 300;
+    //         font-size: 1.25rem;
+    //         line-height: 2.25rem;
+    //         max-width: 36.25rem;
+    //         width: 100%;
+    //         margin-bottom: 3.625rem;
+    //         &--footer {
+    //             font-weight: 300;
+    //             font-size: 1.25rem;
+    //             line-height: 2.25rem;
+    //             color: $white;
+    //         }
+    //         @media (max-width: $mobile) {
+    //             text-align: center;
+    //             margin-bottom: 2rem;
+    //             font-weight: 300;
+    //             font-size: 14px;
+    //             line-height: 26px;
+    //             &--footer {
+    //                 text-align: left;
+    //             }
+    //         }
+    //     }
+    //     &__heading {
+    //         font-weight: 600;
+    //         font-size: 2.25rem;
+    //         line-height: 3rem;
+    //         color: $dark-violet;
+    //         margin: 0;
+    //         position: relative;
+    //         &--footer {
+    //             text-align: left;
+    //             color: $white;
+    //             font-weight: 600;
+    //             font-size: 2rem;
+    //             line-height: 2.75rem;
+    //             &::before {
+    //                 top: -2rem;
+    //                 position: absolute;
+    //                 content: "";
+    //                 display: block;
+    //                 border-radius: 1rem;
+    //                 width: 5rem;
+    //                 height: 0.25rem;
+    //                 background-color: $light-blue;
+    //                 @media(max-width: $desktop) {
+    //                     top: -1rem;
+    //                 }
+    //                 @media(max-width: $mobile) {
+    //                     width: 2.5rem;
+    //                 }
+    //             }
+    //         }
+    //         @media(max-width: $mobile) {
+    //             text-align: center;
+    //             font-size: 24px;
+    //             line-height: 32px;
+    //             &--footer {
+    //                 text-align: left;
+    //             }
+    //         }
+    //     }
+    //     &__horizontal-line {
+    //         margin-bottom: 8rem;
+    //         height: 2px;
+    //         border: none;
+    //         background-color: $light-grey;
+    //         @media(max-width: $mobile) {
+    //             margin-bottom: 4.25rem;
+    //         }
+    //     }
+    //     &__subheading {
+    //         color: $dark-violet;
+    //         min-width: 379px;
+    //         font-weight: 600;
+    //         font-size: 32px;
+    //         line-height: 44px;
+    //         position: relative;
+    //         &::before {
+    //             top: -2rem;
+    //             position: absolute;
+    //             content: "";
+    //             display: block;
+    //             border-radius: 1rem;
+    //             width: 5rem;
+    //             height: 0.25rem;
+    //             @media(max-width: $desktop) {
+    //                 top: -1rem;
+    //             }
+    //             @media(max-width: $mobile) {
+    //                 width: 2.5rem;
+    //             }
+    //         }
+    //         &--working-knowledge {
+    //             &::before {
+    //                 background-color: $green;
+    //             }
+    //         }
+    //         &--know-something-about {
+    //             &::before {
+    //                 background-color: $purple;
+    //             }
+    //         }
+    //         &--want-to-learn {
+    //             margin-top: 3rem;
+    //             &::before {
+    //                 background-color: $blue;
+    //             }
+    //         }
+    //         @media(max-width: $desktop) {
+    //             min-width: 0;
+    //             max-width: 379px;
+    //             width: 100%;
+    //         }
+    //         @media(max-width: $mobile) {
+    //             margin-bottom: 0;
+    //             font-size: 22px;
+    //             line-height: 32px;
+    //         }
+    //     }
+    // }
