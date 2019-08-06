@@ -10,6 +10,27 @@
             padding-top: 4rem;
         }
     }
+    &__description {
+        color: $grey;
+        max-width: 42.5rem;
+        width: 100%;
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        padding-bottom: 60px;
+        @media(max-width: $mobile) {
+            font-size: 14px;
+            line-height: 26px;
+            padding-bottom: 40px;
+        }
+    }
+    @media(max-width: 1400px) {
+        padding: 0 3rem;
+    }
+    @media(max-width: $mobile) {
+        padding: 0 1rem 1rem;
+        // height: 100vh;
+    }
     &__heading {
         font-size: 2.5rem;
         font-weight: 600;
@@ -31,25 +52,48 @@
             width: 66px;
         }
     }
-    &__description {
-        color: $grey;
-        max-width: 42.5rem;
-        width: 100%;
-        font-weight: 300;
+    &__link {
+        display: inline-block;
+        font-weight: 500;
         font-size: 1.25rem;
         line-height: 2.25rem;
-        padding-bottom: 60px;
+        color: $light-blue;
+        &:link,
+        &:visited {
+            text-decoration: none;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+        &:active {
+            transition: transform 0.03s linear;
+            transform: scale(0.975);
+            text-decoration: none;
+        }
+        &--mail {
+            font-size: 1rem;
+            border-bottom: 2px solid;
+            padding-bottom: 0.25rem;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            &:link,
+            &:visited {
+                text-decoration: none;
+            }
+            &:hover {
+                text-decoration: none;
+                transition: transform 0.03s linear;
+                transform: scale(1.075);
+            }
+            &:active {
+                text-decoration: none;
+                transition: transform 0.03s linear;
+                transform: scale(1.025);
+            }
+        }
         @media(max-width: $mobile) {
             font-size: 14px;
             line-height: 26px;
-            padding-bottom: 40px;
         }
-    }
-    @media(max-width: 1400px) {
-        padding: 0 3rem;
-    }
-    @media(max-width: $mobile) {
-        padding: 0 1rem 1rem;
-        // height: 100vh;
     }
 }
