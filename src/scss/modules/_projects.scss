@@ -1,15 +1,15 @@
 .projects {
     width: 100%;
     background: #F5F7FA;
-    padding: 120px 0 136px;
+    padding: 120px 3rem 136px;
     &__container {
         margin: 0 auto;
-        max-width: $desktop;
+        max-width: calc(1184px + 3rem);
         width: 100%;
     }
-    @media(max-width: 1400px) {
-        padding: 120px 3rem 136px;
-    }
+    // @media(max-width: 1400px) {
+    //     padding: 120px 3rem 136px;
+    // }
     @media(max-width: $mobile) {
         padding: 80px 1rem 80px;
     }
