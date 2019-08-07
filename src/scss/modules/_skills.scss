@@ -12,8 +12,6 @@
         position: relative;
         @media(max-width: $mobile) {
             text-align: center;
-            // font-size: 24px;
-            // line-height: 32px;
         }
     }
     &__horizontal-line {
@@ -30,10 +28,6 @@
         font-weight: normal;
         font-size: 1.125rem;
         line-height: 18px;
-        // line-height: 2.5rem;
-        // font-weight: normal;
-        // font-size: 18px;
-        // line-height: 40px;
         color: $grey;
         padding-left: 34px;
         position: relative;
@@ -56,10 +50,6 @@
                 background-color: $blue;
             }
         }
-        @media (max-width: $mobile) {
-            // font-size: 14px;
-            // line-height: 36px;
-        }
     }
     &__list {
         margin: 0;
@@ -68,15 +58,7 @@
         grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
         grid-gap: 22px;
         list-style: none;
-        // @media(max-width: $desktop) {
-        //     grid-template-columns: 1fr;
-        //     grid-gap: 0.5rem;
-        //     padding-left: 0;
-        // }
     }
-    // @media(max-width: 1400px) {
-    //     padding: 200px 3rem 176px;
-    // }
     @media(max-width: $mobile) {
         padding: 120px 1rem 80px;
     }
@@ -84,15 +66,8 @@
         margin-top: 128px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        // justify-content: space-between;
-        // &--know-something-about,
-        // &--want-to-learn {
-        //     padding-top: 48px;
-        // }
         @media(max-width: 900px) {
             grid-template-columns: repeat(1, 1fr);
-            // flex-direction: column;
-            // justify-content: flex-start;
         }
     }
     &__subheading {
@@ -111,9 +86,6 @@
             width: 5rem;
             height: 0.25rem;
             background-color: $green;
-            // @media(max-width: $desktop) {
-            //     top: -1rem;
-            // }
             @media(max-width: $mobile) {
                 width: 2.5rem;
             }
@@ -124,20 +96,12 @@
             }
         }
         &--blue {
-            // margin-top: 3rem;
             &::before {
                 background-color: $blue;
             }
         }
-        // @media(max-width: $desktop) {
-        //     min-width: 0;
-        //     max-width: 379px;
-        //     width: 100%;
-        // }
         @media(max-width: $mobile) {
             margin-bottom: 0;
-            // font-size: 22px;
-            // line-height: 32px;
         }
     }
 }
