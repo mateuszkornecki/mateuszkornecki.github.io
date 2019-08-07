@@ -63,16 +63,20 @@
         padding: 120px 1rem 80px;
     }
     &__section {
-        margin-top: 128px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        @media(max-width: 900px) {
+        @media(max-width: $mobile) {
             grid-template-columns: repeat(1, 1fr);
+        }
+        &+& {
+            margin-top: 8rem;
+            @media(max-width: $mobile) {
+                margin-top: 48px;
+            }
         }
     }
     &__subheading {
         color: $dark-violet;
-        min-width: 379px;
         font-weight: 600;
         font-size: 2rem;
         line-height: 2.75rem;

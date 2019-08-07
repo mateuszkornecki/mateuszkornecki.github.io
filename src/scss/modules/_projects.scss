@@ -20,7 +20,8 @@
         margin-bottom: 3.625rem;
         @media (max-width: $mobile) {
             text-align: center;
-            margin-bottom: 2rem;
+            max-width: 36.25rem;
+            margin: 8px auto 2rem;
         }
     }
     &__heading {
