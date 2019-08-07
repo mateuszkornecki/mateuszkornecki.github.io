@@ -39,12 +39,14 @@ const showRepos = () => {
                 repoFooter.className = 'repo__footer';
                 repoSection.appendChild(repoFooter);
                 //Creating repo__link--demo
-                const repoLinkToDemo = document.createElement('a');
-                repoLinkToDemo.classList.add('repo__link', 'repo__link--demo');
-                repoLinkToDemo.href = repo.homepage;
-                //Creating repo__link--demo
-                repoLinkToDemo.innerHTML = 'Demo';
-                repoFooter.appendChild(repoLinkToDemo);
+                if (repo.homepage) {
+                    const repoLinkToDemo = document.createElement('a');
+                    repoLinkToDemo.classList.add('repo__link', 'repo__link--demo');
+                    repoLinkToDemo.href = repo.homepage;
+                    //Creating repo__link--demo
+                    repoLinkToDemo.innerHTML = 'Demo';
+                    repoFooter.appendChild(repoLinkToDemo);
+                }
                 //Creating repo__separator
                 // const repoSeparator = document.createElement('div');
                 // repoSeparator.className = 'repo__separator';
