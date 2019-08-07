@@ -25,75 +25,79 @@
 <body>
     <header class="header">
         <div class="hero">
-            <img class="profile-image" src="assets/img/avatar.svg" alt="mateusz kornecki profile's photo">
-            <h1 class="header__heading">
+            <img class="hero__image" src="assets/img/avatar.svg" alt="mateusz kornecki profile's photo">
+            <h1 class="hero__heading">
                 Hey there! 👋 My name is Mateusz and I'm an aspiring Frontend developer, Architect and keen climber
             </h1>
-            <p class="header__description">
-                You might be interested in checking the list of <a class="link" href="#skills">my skills.</a> Don’t forget to have a glimpse at <a class="link" href="#projects">my projects.</a> Currently I’m looking for a new challenges so if you have
-                one - <a class="link" href="#contact"> contact me </a> 😊
+            <p class="hero__description">
+                You might be interested in checking the list of <a class="hero__link" href="#skills">my skills.</a> Don’t forget to have a glimpse at <a class="hero__link" href="#projects">my projects.</a> Currently I’m looking for a new challenges so
+                if you have one - <a class="hero__link" href="#contact"> contact me </a> 😊
             </p>
-            <a class="link link--mail" href="mailto:mateusz.kornecki@gmail.com">mateusz.kornecki@gmail.com</a>
+            <a class="hero__link hero__link--mail" href="mailto:mateusz.kornecki@gmail.com">mateusz.kornecki@gmail.com</a>
         </div>
     </header>
 
     <main class="main">
         <section class="skills" id="skills">
-            <h2 class="section__heading">
+            <h2 class="skills__heading section__heading">
                 My skills
             </h2>
-            <hr class="section__horizontal-line">
-            <section class="skills__subsection skills__subsection--working-knowledge">
-                <h3 class="section__subheading section__subheading--working-knowledge">
+            <hr class="skills__horizontal-line">
+            <section class="skills__section">
+
+                <h3 class="skills__subheading">
                     Working knowledge
                 </h3>
                 <ul class="skills__list">
-                    <li class="skills__item skills__item--working-knowledge">Semantic HTML5</li>
-                    <li class="skills__item skills__item--working-knowledge">Flexbox</li>
-                    <li class="skills__item skills__item--working-knowledge">Markdown</li>
-                    <li class="skills__item skills__item--working-knowledge">JS:Local storage</li>
-                    <li class="skills__item skills__item--working-knowledge">Figma</li>
-                    <li class="skills__item skills__item--working-knowledge">CSS grid</li>
-                    <li class="skills__item skills__item--working-knowledge">Forms</li>
-                    <li class="skills__item skills__item--working-knowledge">JS: DOM manipulations</li>
-                    <li class="skills__item skills__item--working-knowledge">SASS</li>
+                    <li class="skills__item">Markdown</li>
+                    <li class="skills__item">Semantic HTML5</li>
+                    <li class="skills__item">Forms</li>
+                    <li class="skills__item">Flexbox</li>
+                    <li class="skills__item">CSS grid</li>
+                    <li class="skills__item">SASS</li>
+                    <li class="skills__item">JS: DOM manipulations</li>
+                    <li class="skills__item">JS: Local storage</li>
+                    <li class="skills__item">Photoshop</li>
                 </ul>
             </section>
-            <section class="skills__subsection skills__subsection--know-something-about">
-                <h3 class="section__subheading section__subheading--know-something-about">
+            <section class="skills__section skills__subsection--know-something-about">
+                <h3 class="skills__subheading skills__subheading--purple">
                     Know something about
                 </h3>
-                <ul class="skills__list">
-                    <li class="skills__item skills__item--know-something-about">JavaScript ES6+ features</li>
-                    <li class="skills__item skills__item--know-something-about">CSS animations</li>
-                    <li class="skills__item skills__item--know-something-about">Working with API</li>
-                    <li class="skills__item skills__item--know-something-about">NPM Scripts</li>
-                    <li class="skills__item skills__item--know-something-about">Progressive web apps</li>
-                    <li class="skills__item skills__item--know-something-about">Git</li>
-                    <li class="skills__item skills__item--know-something-about">Accessibility</li>
+                <ul class="skills__list skills__list--purple">
+                    <li class="skills__item">Accessibility</li>
+                    <li class="skills__item">CSS animations</li>
+                    <li class="skills__item">JavaScript ES6+ features</li>
+                    <li class="skills__item">Working with API</li>
+                    <li class="skills__item">NPM Scripts</li>
+                    <li class="skills__item">Progressive web apps</li>
+                    <li class="skills__item">Figma</li>
+                    <li class="skills__item">Git</li>
+
                 </ul>
             </section>
-            <section class="skills__subsection skills__subsection--want-to-learn">
-                <h3 class="section__subheading section__subheading--want-to-learn">
+            <section class="skills__section skills__subsection skills__subsection--want-to-learn">
+                <h3 class="skills__subheading skills__subheading--blue">
                     Want to learn
                 </h3>
-                <ul class="skills__list">
-                    <li class="skills__item skills__item--want-to-learn">React JS</li>
-                    <li class="skills__item skills__item--want-to-learn">Node JS</li>
-                    <li class="skills__item skills__item--want-to-learn">Electron</li>
-                    <li class="skills__item skills__item--want-to-learn">Server side rendering</li>
-                    <li class="skills__item skills__item--want-to-learn">Typescript</li>
-                    <li class="skills__item skills__item--want-to-learn">Gatsby</li>
-                    <li class="skills__item skills__item--want-to-learn">Websockets</li>
+                <ul class="skills__list skills__list--blue">
+                    <li class="skills__item">Bulma</li>
+                    <li class="skills__item">React JS</li>
+                    <li class="skills__item">Node JS</li>
+                    <li class="skills__item">Electron</li>
+                    <li class="skills__item">Server side rendering</li>
+                    <li class="skills__item">Typescript</li>
+                    <li class="skills__item">Gatsby</li>
+                    <li class="skills__item">Websockets</li>
                 </ul>
             </section>
         </section>
         <section class="projects" id="projects">
             <div class="projects__container">
-                <h2 class="section__heading">
+                <h2 class="projects__heading section__heading">
                     Recent projects
                 </h2>
-                <p class="section__description">
+                <p class="projects__description section__description">
                     I started my frontend developer path few months ago. Since then, I’ve built some projects. Here’s the list of the things I’ve done so far.
                 </p>
                 <div class="repositories repositories--js">
@@ -104,10 +108,10 @@
     </main>
     <footer class="footer" id="contact">
         <div class="footer__container">
-            <h2 class="section__heading section__heading--footer">
+            <h2 class="footer__heading section__heading section__heading--footer">
                 Contact me
             </h2>
-            <p class="section__description section__description--footer">
+            <p class="footer__description">
                 I’m open for new opportunities. If you have one for me we should talk!
             </p>
             <div class="social">
@@ -115,7 +119,7 @@
                 <a href="https://github.com/mateuszkornecki/" class="social__link"><img src="assets/img/github-logo.svg" alt="github logo" class="social__image"></a>
                 <a href="https://www.instagram.com/korneckimateusz/" class="social__link"><img src="assets/img/instagram-logo.svg" alt="instagram logo" class="social__image"></a>
             </div>
-            <a class="link link--mail" href="mailto:mateusz.kornecki@gmail.com">mateusz.kornecki@gmail.com</a>
+            <a class="footer__mail" href="mailto:mateusz.kornecki@gmail.com">mateusz.kornecki@gmail.com</a>
         </div>
     </footer>
     <script src="js/main.js"></script>
