@@ -117,6 +117,8 @@
                 display: inline-block;
                 background-image: url(/assets/img/demo-icon.svg);
                 margin-right: 0.625rem;
+                background-size: contain;
+                background-repeat: no-repeat;
             }
         }
         &--github {
@@ -130,6 +132,8 @@
                 display: inline-block;
                 background-image: url(/assets/img/code-icon.svg);
                 margin-right: 0.625rem;
+                background-size: contain;
+                background-repeat: no-repeat;
             }
         }
     }
