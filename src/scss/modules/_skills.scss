@@ -1,8 +1,8 @@
 .skills {
     margin: 0 auto;
-    max-width: calc(1184px + 3rem);
+    max-width: calc(1184px + 1rem);
     width: 100%;
-    padding: 120px 3rem 136px;
+    padding: 120px 1rem 136px;
     &__heading {
         font-weight: 600;
         font-size: 2.25rem;
@@ -12,8 +12,8 @@
         position: relative;
         @media(max-width: $mobile) {
             text-align: center;
-            font-size: 24px;
-            line-height: 32px;
+            // font-size: 24px;
+            // line-height: 32px;
         }
     }
     &__horizontal-line {
@@ -57,8 +57,8 @@
             }
         }
         @media (max-width: $mobile) {
-            font-size: 14px;
-            line-height: 36px;
+            // font-size: 14px;
+            // line-height: 36px;
         }
     }
     &__list {
@@ -136,8 +136,8 @@
         // }
         @media(max-width: $mobile) {
             margin-bottom: 0;
-            font-size: 22px;
-            line-height: 32px;
+            // font-size: 22px;
+            // line-height: 32px;
         }
     }
 }

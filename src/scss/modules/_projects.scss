@@ -1,179 +1,177 @@
-        .projects {
-            width: 100%;
-            background: #F5F7FA;
-            padding: 120px 3rem 136px;
-            &__container {
-                margin: 0 auto;
-                max-width: calc(1184px + 3rem);
-                width: 100%;
-            }
-            // @media(max-width: 1400px) {
-            //     padding: 120px 3rem 136px;
-            // }
-            @media(max-width: $mobile) {
-                padding: 80px 1rem 80px;
-            }
-            &__description {
-                color: $grey;
-                font-weight: 300;
-                font-size: 1.25rem;
-                line-height: 2.25rem;
-                max-width: 36.25rem;
-                width: 100%;
-                margin-bottom: 3.625rem;
-                @media (max-width: $mobile) {
-                    text-align: center;
-                    margin-bottom: 2rem;
-                    font-weight: 300;
-                    font-size: 14px;
-                    line-height: 26px;
-                }
-            }
-            &__heading {
-                font-weight: 600;
-                font-size: 2.25rem;
-                line-height: 3rem;
-                color: $dark-violet;
-                margin: 0;
-                position: relative;
-                @media(max-width: $mobile) {
-                    text-align: center;
-                    font-size: 24px;
-                    line-height: 32px;
-                }
+.projects {
+    width: 100%;
+    background: #F5F7FA;
+    padding: 120px 1rem 136px;
+    &__container {
+        margin: 0 auto;
+        max-width: calc(1184px + 1rem);
+        width: 100%;
+    }
+    // @media(max-width: 1400px) {
+    //     padding: 120px 3rem 136px;
+    // }
+    @media(max-width: $mobile) {
+        padding: 80px 1rem 80px;
+    }
+    &__description {
+        color: $grey;
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        max-width: 36.25rem;
+        width: 100%;
+        margin-bottom: 3.625rem;
+        @media (max-width: $mobile) {
+            text-align: center;
+            margin-bottom: 2rem;
+            // font-weight: 300;
+            // font-size: 14px;
+            // line-height: 26px;
+        }
+    }
+    &__heading {
+        font-weight: 600;
+        font-size: 2.25rem;
+        line-height: 3rem;
+        color: $dark-violet;
+        margin: 0;
+        position: relative;
+        @media(max-width: $mobile) {
+            text-align: center;
+            // font-size: 24px;
+            // line-height: 32px;
+        }
+    }
+}
+
+.repositories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 1.5rem;
+    @media(max-width: $mobile) {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+}
+
+.repo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background: $white;
+    box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+    &__content {
+        margin: 3rem;
+        @media(max-width: $mobile) {
+            margin: 2rem;
+        }
+    }
+    &__description {
+        margin: 0;
+        font-weight: 300;
+        font-size: 1.125em;
+        line-height: 2em;
+        color: $grey;
+        @media(max-width: $mobile) {
+            // font-size: 14px;
+            // line-height: 26px;
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem 3rem;
+        background: #F5F7FA;
+        border-radius: 0 0 0.5rem 0.5rem;
+        @media(max-width: $mobile) {
+            padding: 1rem 2rem;
+        }
+    }
+    &__image {
+        width: 48px;
+        height: 48px;
+        @media(max-width: $mobile) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    &__link {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 1.125em;
+        line-height: 2em;
+        color: $light-blue;
+        &:link,
+        &:visited {
+            text-decoration: none;
+        }
+        &:hover {
+            text-decoration: underline;
+            transition: transform 0.03s linear;
+            transform: scale(1.075);
+            text-decoration: none;
+        }
+        &:active {
+            transition: transform 0.03s linear;
+            transform: scale(1.025);
+            text-decoration: none;
+        }
+        &--demo {
+            display: flex;
+            align-items: center;
+            &::before {
+                content: '';
+                width: 1.5rem;
+                height: 1.5rem;
+                display: inline-block;
+                background-image: url(/assets/img/demo-icon.svg);
+                margin-right: 0.625rem;
             }
         }
-        
-        .repositories {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-            grid-gap: 1.5rem;
-            @media(max-width: $mobile) {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            }
-        }
-        
-        .repo {
+        &--github {
             position: relative;
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            font-size: 1rem;
-            width: 100%;
-            height: 100%;
-            border-radius: 0.5rem;
-            background: $white;
-            box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
-            &__content {
-                margin: 3rem;
-                @media(max-width: $mobile) {
-                    margin: 2rem;
-                }
-            }
-            &__description {
-                margin: 0;
-                font-weight: 300;
-                font-size: 1.125em;
-                line-height: 2em;
-                color: $grey;
-                @media(max-width: $mobile) {
-                    font-size: 14px;
-                    line-height: 26px;
-                }
-            }
-            &__footer {
-                display: flex;
-                justify-content: flex-end;
-                padding: 1rem 3rem;
-                background: #F5F7FA;
-                border-radius: 0 0 0.5rem 0.5rem;
-                @media(max-width: $mobile) {
-                    padding: 1rem 2rem;
-                }
-            }
-            &__image {
-                width: 48px;
-                height: 48px;
-                @media(max-width: $mobile) {
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-            &__link {
+            align-items: center;
+            &::before {
+                content: '';
+                width: 1.5rem;
+                height: 1.5rem;
                 display: inline-block;
-                font-weight: 500;
-                font-size: 1.125em;
-                line-height: 2em;
-                color: $light-blue;
-                &:link,
-                &:visited {
-                    text-decoration: none;
-                }
-                &:hover {
-                    text-decoration: underline;
-                    transition: transform 0.03s linear;
-                    transform: scale(1.075);
-                    text-decoration: none;
-                }
-                &:active {
-                    transition: transform 0.03s linear;
-                    transform: scale(1.025);
-                    text-decoration: none;
-                }
-                &--demo {
-                    display: flex;
-                    align-items: center;
-                    &::before {
-                        content: '';
-                        width: 1.5rem;
-                        height: 1.5rem;
-                        display: inline-block;
-                        background-image: url(/assets/img/demo-icon.svg);
-                        margin-right: 0.625rem;
-                    }
-                }
-                &--github {
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    &::before {
-                        content: '';
-                        width: 1.5rem;
-                        height: 1.5rem;
-                        display: inline-block;
-                        background-image: url(/assets/img/code-icon.svg);
-                        margin-right: 0.625rem;
-                    }
-                }
-                &+& {
-                    margin-left: 3rem;
-                    //? SEPARATOR
-                    &--github::after {
-                        pointer-events: none;
-                        position: absolute;
-                        left: -1.5rem;
-                        content: '';
-                        display: inline-block;
-                        width: 2px;
-                        height: 2rem;
-                        background-color: $light-grey;
-                    }
-                }
-                @media(max-width: $mobile) {
-                    font-size: 14px;
-                    line-height: 28px;
-                }
-            }
-            &__title {
-                overflow-wrap: break-word;
-                font-weight: 600;
-                font-size: 1.25em;
-                line-height: 2.25em;
-                color: $dark-violet;
-                margin: 0;
-                @media(max-width: $mobile) {
-                    font-size: 16px;
-                    line-height: 24px;
-                }
+                background-image: url(/assets/img/code-icon.svg);
+                margin-right: 0.625rem;
             }
         }
+        &+& {
+            margin-left: 3rem;
+            //? SEPARATOR
+            &--github::after {
+                pointer-events: none;
+                position: absolute;
+                left: -1.5rem;
+                content: '';
+                display: inline-block;
+                width: 2px;
+                height: 2rem;
+                background-color: $light-grey;
+            }
+        }
+        @media(max-width: $mobile) {
+            font-size: 14px;
+            line-height: 28px;
+        }
+    }
+    &__title {
+        overflow-wrap: break-word;
+        font-weight: 600;
+        font-size: 1.25em;
+        line-height: 2.25em;
+        color: $dark-violet;
+        margin: 0;
+        @media(max-width: $mobile) {
+            // font-size: 16px;
+            // line-height: 24px;
+        }
+    }
+}

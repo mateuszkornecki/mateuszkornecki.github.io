@@ -9,6 +9,9 @@
         box-sizing: border-box;
         scroll-behavior: smooth;
         max-width: 100vw;
+        @media (max-width: $mobile) {
+            font-size: 11px;
+        }
     }
     
     *,
@@ -23,52 +26,52 @@
         font-family: 'Poppins', sans-serif;
         -webkit-font-smoothing: antialiased;
         border: solid 1rem $dark-violet;
-        @media (max-width: $desktop) {
+        @media (max-width: $mobile) {
             border: none;
         }
     }
     
-    .link {
-        display: inline-block;
-        font-weight: 500;
-        font-size: 1.25rem;
-        line-height: 2.25rem;
-        color: $light-blue;
-        &:link,
-        &:visited {
-            text-decoration: none;
-        }
-        &:hover {
-            text-decoration: underline;
-        }
-        &:active {
-            transition: transform 0.03s linear;
-            transform: scale(0.975);
-            text-decoration: none;
-        }
-        &--mail {
-            font-size: 1rem;
-            border-bottom: 2px solid;
-            padding-bottom: 0.25rem;
-            overflow-wrap: break-word;
-            word-wrap: break-word;
-            &link,
-            &visited {
-                text-decoration: none;
-            }
-            &:hover {
-                text-decoration: none;
-                transition: transform 0.03s linear;
-                transform: scale(1.075);
-            }
-            &:active {
-                text-decoration: none;
-                transition: transform 0.03s linear;
-                transform: scale(1.025);
-            }
-        }
-        @media(max-width: $mobile) {
-            font-size: 14px;
-            line-height: 26px;
-        }
-    }
+    // .link {
+    //     display: inline-block;
+    //     font-weight: 500;
+    //     font-size: 1.25rem;
+    //     line-height: 2.25rem;
+    //     color: $light-blue;
+    //     &:link,
+    //     &:visited {
+    //         text-decoration: none;
+    //     }
+    //     &:hover {
+    //         text-decoration: underline;
+    //     }
+    //     &:active {
+    //         transition: transform 0.03s linear;
+    //         transform: scale(0.975);
+    //         text-decoration: none;
+    //     }
+    //     &--mail {
+    //         font-size: 1rem;
+    //         border-bottom: 2px solid;
+    //         padding-bottom: 0.25rem;
+    //         overflow-wrap: break-word;
+    //         word-wrap: break-word;
+    //         &link,
+    //         &visited {
+    //             text-decoration: none;
+    //         }
+    //         &:hover {
+    //             text-decoration: none;
+    //             transition: transform 0.03s linear;
+    //             transform: scale(1.075);
+    //         }
+    //         &:active {
+    //             text-decoration: none;
+    //             transition: transform 0.03s linear;
+    //             transform: scale(1.025);
+    //         }
+    //     }
+    //     @media(max-width: $mobile) {
+    //         font-size: 14px;
+    //         line-height: 26px;
+    //     }
+    // }

@@ -38,19 +38,14 @@ const showRepos = () => {
                 const repoFooter = document.createElement('footer');
                 repoFooter.className = 'repo__footer';
                 repoSection.appendChild(repoFooter);
-                //Creating repo__link--demo
+                //Creating repo__link--demo (only if it exist)
                 if (repo.homepage) {
                     const repoLinkToDemo = document.createElement('a');
                     repoLinkToDemo.classList.add('repo__link', 'repo__link--demo');
                     repoLinkToDemo.href = repo.homepage;
-                    //Creating repo__link--demo
                     repoLinkToDemo.innerHTML = 'Demo';
                     repoFooter.appendChild(repoLinkToDemo);
                 }
-                //Creating repo__separator
-                // const repoSeparator = document.createElement('div');
-                // repoSeparator.className = 'repo__separator';
-                // repoFooter.appendChild(repoSeparator);
                 //Creating repo__link--github
                 const repoLinkToGithub = document.createElement('a');
                 repoLinkToGithub.classList.add('repo__link', 'repo__link--github');
