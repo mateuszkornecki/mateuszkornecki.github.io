@@ -27,9 +27,9 @@
         font-style: normal;
         font-weight: normal;
         font-size: 1.125rem;
-        line-height: 18px;
+        line-height: 1.125rem;
         color: $grey;
-        padding-left: 34px;
+        padding-left: 1.875rem;
         position: relative;
         &::before {
             position: absolute;
@@ -37,8 +37,8 @@
             left: 0;
             content: "";
             display: block;
-            height: 18px;
-            width: 18px;
+            height: 1.125rem;
+            width: 1.125rem;
             mask: url(/assets/img/bullet.svg);
             mask-size: contain;
             mask-repeat: no-repeat;
@@ -55,7 +55,7 @@
         margin: 0;
         padding: 0;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
         grid-gap: 22px;
         list-style: none;
     }
@@ -74,8 +74,8 @@
         color: $dark-violet;
         min-width: 379px;
         font-weight: 600;
-        font-size: 32px;
-        line-height: 44px;
+        font-size: 2rem;
+        line-height: 2.75rem;
         position: relative;
         &::before {
             top: -2rem;
@@ -89,6 +89,9 @@
             @media(max-width: $mobile) {
                 width: 2.5rem;
             }
+        }
+        @media(max-width: $mobile) {
+            padding-bottom: 20px;
         }
         &--purple {
             &::before {
