@@ -131,24 +131,15 @@
                 margin-right: 0.625rem;
             }
         }
-        &+& {
-            margin-left: 3rem;
-            //? SEPARATOR
-            &--github::after {
-                pointer-events: none;
-                position: absolute;
-                left: -1.5rem;
-                content: '';
-                display: inline-block;
-                width: 2px;
-                height: 2rem;
-                background-color: $light-grey;
-            }
-        }
-        @media(max-width: $mobile) {
-            font-size: 14px;
-            line-height: 28px;
-        }
+    }
+    &__separator::after {
+        margin: 0 1.5rem 0;
+        content: '';
+        pointer-events: none;
+        display: inline-block;
+        width: 2px;
+        height: 2rem;
+        background-color: $light-grey;
     }
     &__title {
         overflow-wrap: break-word;
