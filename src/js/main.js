@@ -46,9 +46,9 @@ const showRepos = () => {
                 repoLinkToDemo.innerHTML = 'Demo';
                 repoFooter.appendChild(repoLinkToDemo);
                 //Creating repo__separator
-                const repoSeparator = document.createElement('div');
-                repoSeparator.className = 'repo__separator';
-                repoFooter.appendChild(repoSeparator);
+                // const repoSeparator = document.createElement('div');
+                // repoSeparator.className = 'repo__separator';
+                // repoFooter.appendChild(repoSeparator);
                 //Creating repo__link--github
                 const repoLinkToGithub = document.createElement('a');
                 repoLinkToGithub.classList.add('repo__link', 'repo__link--github');

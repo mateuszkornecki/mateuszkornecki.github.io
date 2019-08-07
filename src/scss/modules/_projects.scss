@@ -54,6 +54,7 @@
         }
         
         .repo {
+            position: relative;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -120,8 +121,6 @@
                     text-decoration: none;
                 }
                 &--demo {
-                    position: relative;
-                    padding-right: 1.5rem;
                     display: flex;
                     align-items: center;
                     &::before {
@@ -134,7 +133,7 @@
                     }
                 }
                 &--github {
-                    padding-left: 1.5rem;
+                    position: relative;
                     display: flex;
                     align-items: center;
                     &::before {
@@ -146,19 +145,24 @@
                         margin-right: 0.625rem;
                     }
                 }
+                &+& {
+                    margin-left: 3rem;
+                    //? SEPARATOR
+                    &--github::after {
+                        pointer-events: none;
+                        position: absolute;
+                        left: -1.5rem;
+                        content: '';
+                        display: inline-block;
+                        width: 2px;
+                        height: 2rem;
+                        background-color: $light-grey;
+                    }
+                }
                 @media(max-width: $mobile) {
                     font-size: 14px;
                     line-height: 28px;
                 }
-            }
-            &__separator {
-                font-weight: 500;
-                font-size: 1.125em;
-                line-height: 2em;
-                display: inline-block;
-                width: 2px;
-                height: 2em;
-                background-color: $light-grey;
             }
             &__title {
                 font-weight: 600;
@@ -172,54 +176,3 @@
                 }
             }
         }
-        
-        // .section {
-        //     &__description {
-        //         color: $grey;
-        //         font-weight: 300;
-        //         font-size: 1.25rem;
-        //         line-height: 2.25rem;
-        //         max-width: 36.25rem;
-        //         width: 100%;
-        //         margin-bottom: 3.625rem;
-        //         
-        //         @media (max-width: $mobile) {
-        //             text-align: center;
-        //             margin-bottom: 2rem;
-        //             font-weight: 300;
-        //             font-size: 14px;
-        //             line-height: 26px;
-        //         }
-        //     }
-        //     &__heading {
-        //         font-weight: 600;
-        //         font-size: 2.25rem;
-        //         line-height: 3rem;
-        //         color: $dark-violet;
-        //         margin: 0;
-        //         position: relative;
-        //         
-        //         }
-        //         @media(max-width: $mobile) {
-        //             text-align: center;
-        //             font-size: 24px;
-        //             line-height: 32px;
-        //             &--footer {
-        //                 text-align: left;
-        //             }
-        //         }
-        //     }
-        // 
-        //     
-        //         @media(max-width: $desktop) {
-        //             min-width: 0;
-        //             max-width: 379px;
-        //             width: 100%;
-        //         }
-        //         @media(max-width: $mobile) {
-        //             margin-bottom: 0;
-        //             font-size: 22px;
-        //             line-height: 32px;
-        //         }
-        //     }
-        // }
