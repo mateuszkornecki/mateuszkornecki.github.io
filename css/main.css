@@ -460,7 +460,7 @@ template {
       .skills__list--blue .skills__item::before {
         background-color: #2251CC; }
   .skills__list {
-    margin-top: 2rem;
+    margin-top: 2.375rem;
     padding: 0;
     display: -ms-grid;
     display: grid;
