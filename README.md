@@ -1,6 +1,6 @@
 ![Project cover.](https://mateuszkornecki.github.io/assets/img/cover.png "Project cover")
 
-# My personal Portfolio
+# My personal Portfolio 👨‍🎓️
 Feel free to check out the finall [result](https://mateuszkornecki.github.io/).
 
 ## About the author
