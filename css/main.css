@@ -377,7 +377,6 @@ template {
               transform: scale(0.975);
       text-decoration: none; }
     .hero__link--mail {
-      font-size: 1rem;
       border-bottom: 2px solid;
       padding-bottom: 0.25rem;
       overflow-wrap: break-word;
@@ -734,9 +733,9 @@ template {
   .footer__mail {
     display: inline-block;
     font-weight: 500;
+    font-size: 1.25rem;
     line-height: 2.25rem;
     color: #0593FB;
-    font-size: 1rem;
     border-bottom: 2px solid;
     padding-bottom: 0.25rem;
     overflow-wrap: break-word;
