@@ -40,4 +40,3 @@ The main goal of the project was to create a portfolio based on the recived Figm
 **To publish you page using github pages use:**<br>
 `npm run deploy`<br>
 
-[bullet]: https://mateuszkornecki.github.io/assets/img/bullet.svg "test"
