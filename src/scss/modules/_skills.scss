@@ -52,7 +52,7 @@
         }
     }
     &__list {
-        margin-top: 2rem;
+        margin-top: 2.375rem;
         padding: 0;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -84,6 +84,7 @@
         font-size: 2rem;
         line-height: 2.75rem;
         position: relative;
+        // margin: 0;
         &::before {
             top: -2rem;
             position: absolute;
