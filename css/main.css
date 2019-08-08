@@ -499,12 +499,15 @@ template {
       width: 5rem;
       height: 0.25rem;
       background-color: #06C847; }
+      @media (max-width: 1184px) {
+        .skills__subheading::before {
+          top: -1rem; } }
       @media (max-width: 820px) {
         .skills__subheading::before {
           width: 2.5rem; } }
     @media (max-width: 820px) {
       .skills__subheading {
-        padding-bottom: 20px; } }
+        padding-bottom: 1.25rem; } }
     .skills__subheading--purple::before {
       background-color: #653CAD; }
     .skills__subheading--blue::before {
@@ -686,7 +689,7 @@ template {
 
 .footer {
   width: 100%;
-  padding: 120px 1rem 125px;
+  padding: 120px 1rem 120px;
   background: #171F3F;
   color: #FFF; }
   .footer__container {
