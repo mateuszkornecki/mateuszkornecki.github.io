@@ -90,6 +90,9 @@
             width: 5rem;
             height: 0.25rem;
             background-color: $green;
+            @media(max-width: $desktop) {
+                top: -1rem;
+            }
             @media(max-width: $mobile) {
                 width: 2.5rem;
             }
