@@ -347,15 +347,15 @@ template {
         font-size: 26px;
         line-height: 36px; } }
   .hero__image {
-    padding: 5px;
+    padding: 0.375rem;
     border-radius: 50%;
-    border: 5px solid #CBD2D9;
+    border: 0.375rem solid #CBD2D9;
     height: 120px;
     width: 120px; }
     @media (max-width: 820px) {
       .hero__image {
-        height: 66px;
-        width: 66px; } }
+        height: 80px;
+        width: 80px; } }
   .hero__link {
     display: inline-block;
     font-weight: 500;
