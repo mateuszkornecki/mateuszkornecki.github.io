@@ -460,13 +460,16 @@ template {
       .skills__list--blue .skills__item::before {
         background-color: #2251CC; }
   .skills__list {
-    margin: 0;
+    margin-top: 2rem;
     padding: 0;
     display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     grid-gap: 22px;
     list-style: none; }
+    @media (max-width: 820px) {
+      .skills__list {
+        margin-top: 0; } }
   @media (max-width: 820px) {
     .skills {
       padding: 120px 1rem 80px; } }
