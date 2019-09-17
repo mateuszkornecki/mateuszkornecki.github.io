@@ -1,14 +1,23 @@
 "use strict";
 
-const showRepos = () => {
+const hiddenRepos = ["ide-na-front", "WTF-04-teamwork", "card-material-UI"];
 
-    fetch(`https://api.github.com/users/mateuszkornecki/repos?sort=created`)
+const filterRepos = (repos, hiddenRepos) => {
+    const publicRepos = repos.filter(({ name }) => !hiddenRepos.includes(name));
+    return publicRepos;
+}
+
+const showRepos = (githubUserName) => {
+
+    fetch(`https://api.github.com/users/${githubUserName}/repos?sort=created`)
         .then(resp => resp.json())
         .then(resp => {
             let repos = resp;
             const repositories = document.querySelector('.repositories--js ');
+            //Used it to display on portfolio only selected repos
+            const publicRepos = filterRepos(repos, hiddenRepos);
 
-            repos.forEach(repo => {
+            publicRepos.forEach(repo => {
 
                 //Creating repo-card
                 const repoSection = document.createElement('section');
@@ -65,4 +74,4 @@ const showRepos = () => {
         })
 }
 
-showRepos();
+showRepos("mateuszkornecki");
