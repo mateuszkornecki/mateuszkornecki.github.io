@@ -1,6 +1,6 @@
 "use strict";
 
-const hiddenRepos = ["ide-na-front", "WTF-04-teamwork", "card-material-UI"];
+const hiddenRepos = ["ide-na-front", "WTF-04-teamwork", "card-material-UI", "pomodoro-timer-React"];
 
 const filterRepos = (repos, hiddenRepos) => {
     const publicRepos = repos.filter(({ name }) => !hiddenRepos.includes(name));
