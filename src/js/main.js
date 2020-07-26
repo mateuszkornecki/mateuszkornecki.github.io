@@ -8,7 +8,6 @@ const visibleRepos = [
   "hydrapp-PWA",
   "mateuszkornecki.github.io",
   "simple-editor",
-  "grouped_categories",
   "tibiaBot",
   "pomodoro-timer-React",
   "roman-converter-tdd",
