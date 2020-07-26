@@ -1,6 +1,7 @@
 "use strict";
 
 const visibleRepos = [
+  "chess-clock",
   "highcharts-snake-game",
   "memo-PWA",
   "github-search",
